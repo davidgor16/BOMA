@@ -435,5 +435,27 @@
     "Full retraining of all six models",
     "Clean installation of all six environments",
     "Semantic realignment of mismatched HMamba arrays"
-  ]
+  ],
+  "release_assets": {
+    "status": "uploaded_and_sha256_verified",
+    "release_id": 391414230,
+    "archive_parts": 22,
+    "checksum_files": 1,
+    "compressed_archive_bytes": 5872739631,
+    "github_digests_equal_local": true,
+    "download_integration": {
+      "authenticated_download": "pass",
+      "package": "gopt-experiments",
+      "parts": [
+        {
+          "name": "gopt-experiments.tar.gz.part001",
+          "bytes": 32936857,
+          "sha256": "b85da319b15890f641dc2ad8819fc53370dd5a0cae5033e722c218d6b2d770bd",
+          "status": "pass"
+        }
+      ],
+      "restored_files": 356,
+      "restoration": "pass"
+    }
+  }
 }

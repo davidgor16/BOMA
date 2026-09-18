@@ -6,7 +6,7 @@ Research code and saved experiments associated with *Beyond the Majority Bin: A 
 
 This repository preserves the six model implementations and experimental artifacts from the experiment server. Preparation changes to the research Python files are limited to English comments and docstrings; their executable tokens and syntax trees were checked against the captured originals. Independent tools provide explicit output paths, artifact verification, and evaluation of saved predictions.
 
-> **Release preparation status:** the code and artifact packages have been prepared locally. The artifact manifest records whether download URLs are available. See [validation and limitations](docs/REPRODUCIBILITY.md) before interpreting this snapshot as a complete reproduction of every manuscript result.
+> **Release v1.0.0:** data, checkpoints, saved experiments and figures are available in the [release assets](https://github.com/davidgor16/BOMA/releases/tag/v1.0.0). The repository currently requires authorized GitHub access. See [validation and limitations](docs/REPRODUCIBILITY.md) for the scope of the verified results.
 
 ## What is included
 
@@ -37,10 +37,18 @@ source .venv-analysis/bin/activate
 python -m pip install -r environments/analysis.txt
 ```
 
-Restore the GOPT experiment package from the release assets. Before the upload is complete, place the prepared parts in a directory and supply `--from-dir /path/to/assets`:
+Download the GOPT experiment package from the [release page](https://github.com/davidgor16/BOMA/releases/tag/v1.0.0) while signed in, or use the authenticated [GitHub CLI](https://cli.github.com/manual/gh_release_download). Save every part of the selected package in `release-assets/`:
 
 ```bash
-python tools/restore_artifacts.py --package gopt-experiments --from-dir /path/to/assets
+gh auth login
+gh release download v1.0.0 --repo davidgor16/BOMA \
+  --pattern 'gopt-experiments.tar.gz.part*' --dir release-assets
+```
+
+Restore the package and evaluate the saved predictions:
+
+```bash
+python tools/restore_artifacts.py --package gopt-experiments --from-dir release-assets
 python tools/evaluate_saved.py \
   --experiment 01_gopt/exp/gopt-BOMA \
   --bins uniform5 --min-support 1 --seed 0 --iterations 1000 \
