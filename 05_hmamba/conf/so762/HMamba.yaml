@@ -1,0 +1,18 @@
+embed_dim: 128
+gop_dim: 84
+ssl_dim: [1024, 1024, 1024]
+raw_dim: 8
+d_state: 16
+d_conv: 2
+expand: 4
+feat_drop: 0.2
+drop: 0.0
+use_pos: True
+use_cano: True
+use_bies: True
+use_conv: True
+pool_mode: score-attn
+block_type: bimamba
+max_len: 52
+# exclude the [PAD] token
+vocab_size: 49

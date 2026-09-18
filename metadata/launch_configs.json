@@ -1,0 +1,307 @@
+{
+  "gopt": {
+    "cwd": "01_gopt/src",
+    "scripts": {
+      "server": "traintest_BOMA.py",
+      "sb": "traintest_BOMA_SB_loss.py"
+    },
+    "arguments": [
+      "--lr",
+      "0.001",
+      "--n-epochs",
+      "100",
+      "--goptdepth",
+      "3",
+      "--goptheads",
+      "1",
+      "--batch_size",
+      "25",
+      "--embed_dim",
+      "24",
+      "--model",
+      "gopt",
+      "--am",
+      "librispeech"
+    ],
+    "required": [
+      "01_gopt/data/seq_data_librispeech/tr_feat.npy",
+      "01_gopt/src/utt_ids_train_orden_mi_train"
+    ],
+    "semantics": {
+      "server": "DB-MSE with phoneme Macro-MSE checkpoint selection; current server source.",
+      "sb": "Score-balanced-loss comparison; current server SB source."
+    }
+  },
+  "hipama": {
+    "cwd": "02_HiPAMA/src",
+    "scripts": {
+      "server": "traintest_BOMA.py",
+      "sb": "traintest_BOMA_SB_loss.py"
+    },
+    "arguments": [
+      "--lr",
+      "0.001",
+      "--n-epochs",
+      "100",
+      "--goptdepth",
+      "3",
+      "--goptheads",
+      "1",
+      "--batch_size",
+      "25",
+      "--embed_dim",
+      "24",
+      "--model",
+      "hipama",
+      "--am",
+      "librispeech"
+    ],
+    "required": [
+      "02_HiPAMA/data/seq_data_librispeech/tr_feat.npy",
+      "02_HiPAMA/src/utt_ids_train_orden_mi_train"
+    ],
+    "semantics": {
+      "server": "DB-MSE with phoneme Macro-MSE checkpoint selection; current server source.",
+      "sb": "Score-balanced-loss comparison; current server SB source."
+    }
+  },
+  "hiertfr": {
+    "cwd": "03_HierTFR/src",
+    "scripts": {
+      "server": "traintest_gop_hierTFR_v61_preFix_aspFix_pccLoss_BOMA.py",
+      "sb": "traintest_gop_hierTFR_v61_preFix_aspFix_pccLoss_BOMA_SB_loss.py"
+    },
+    "arguments": [
+      "--lr",
+      "0.001",
+      "--n-epochs",
+      "100",
+      "--goptdepth",
+      "3",
+      "--goptheads",
+      "3",
+      "--batch_size",
+      "25",
+      "--embed_dim",
+      "24",
+      "--model",
+      "gopt",
+      "--am",
+      "librispeech",
+      "--loss_w_phn",
+      "1",
+      "--loss_w_word",
+      "1",
+      "--loss_w_utt",
+      "1",
+      "--loss_w_pcc",
+      "1"
+    ],
+    "required": [
+      "03_HierTFR/data/seq_data_librispeech_v3/tr_feat.npy",
+      "03_HierTFR/src/utt_ids_train_orden_mi_train",
+      "03_HierTFR/exp_hierTFR/v6_aspFix_preMdl/v61_v1/0/models/best_audio_model.pth"
+    ],
+    "semantics": {
+      "server": "DB-MSE with phoneme Macro-MSE checkpoint selection; current server source.",
+      "sb": "Score-balanced-loss comparison; current server SB source."
+    }
+  },
+  "conpco": {
+    "cwd": "04_ConPCO/src",
+    "scripts": {
+      "server": "traintest_eng_dur_ssl_3m_HierBFR_conPCO_norm_BOMA.py",
+      "sb": "traintest_eng_dur_ssl_3m_HierBFR_conPCO_norm_BOMA_SB_loss.py"
+    },
+    "arguments": [
+      "--lr",
+      "0.001",
+      "--n-epochs",
+      "100",
+      "--p_depth",
+      "3",
+      "--w_depth",
+      "2",
+      "--u_depth",
+      "1",
+      "--hiercbheads",
+      "1",
+      "--batch_size",
+      "25",
+      "--embed_dim",
+      "24",
+      "--loss_w_phn",
+      "1",
+      "--loss_w_word",
+      "1",
+      "--loss_w_utt",
+      "1",
+      "--loss_w_clap",
+      "1",
+      "--loss_w_pco",
+      "1",
+      "--pco_ld",
+      "0.5",
+      "--pco_lt",
+      "0.1",
+      "--pco_mg",
+      "1",
+      "--clap_t2a",
+      "0.5",
+      "--model",
+      "hiercb",
+      "--am",
+      "librispeech",
+      "--seed",
+      "22",
+      "--ssl_drop",
+      "0.2",
+      "--conpco"
+    ],
+    "required": [
+      "04_ConPCO/data/seq_data_librispeech_v4/tr_feat.npy",
+      "04_ConPCO/src/utt_ids_train_orden_mi_train"
+    ],
+    "semantics": {
+      "server": "DB-MSE with phoneme Macro-MSE checkpoint selection; current server source.",
+      "sb": "Score-balanced-loss comparison; current server SB source."
+    }
+  },
+  "m3c": {
+    "cwd": "06_M3C/src",
+    "scripts": {
+      "server": "traintest_M3C_BOMA.py",
+      "sb": "traintest_M3C_BOMA_SB_loss.py"
+    },
+    "arguments": [
+      "--lr",
+      "0.001",
+      "--n-epochs",
+      "50",
+      "--batch_size",
+      "64",
+      "--embed_dim",
+      "24",
+      "--model",
+      "m3c",
+      "--am",
+      "features_vc_clean_embbedings_norm",
+      "--alpha_mdd",
+      "0.03",
+      "--num_convs_vc",
+      "32",
+      "--input_dim_vowels",
+      "15",
+      "--input_dim_consonants",
+      "24",
+      "--output_dim_vc",
+      "30",
+      "--dropout_cnn_vc",
+      "0.4",
+      "--dropout_mlp_vc",
+      "0",
+      "--num_convs_ssl",
+      "2",
+      "--input_dim_ssl",
+      "1024",
+      "--output_dim_ssl",
+      "30",
+      "--dropout_cnn_ssl",
+      "0.8",
+      "--dropout_mlp_ssl",
+      "0",
+      "--fusion_dim",
+      "30",
+      "--dropout_mlp_fusion",
+      "0.3",
+      "--num_convs_phn",
+      "32",
+      "--output_dim_phn",
+      "30",
+      "--dropout_cnn_phn",
+      "0",
+      "--dropout_mlp_phn",
+      "0",
+      "--num_convs_word",
+      "32",
+      "--output_dim_word",
+      "30",
+      "--dropout_cnn_word",
+      "0.2",
+      "--dropout_mlp_word",
+      "0",
+      "--num_convs_utt",
+      "32",
+      "--output_dim_utt",
+      "30",
+      "--dropout_cnn_utt",
+      "0",
+      "--dropout_mlp_utt",
+      "0"
+    ],
+    "required": [
+      "06_M3C/data/GoP_VC_Features_Embbeding_norm/tr_feat.npy",
+      "06_M3C/src/utt_ids_train_orden_mi_train"
+    ],
+    "semantics": {
+      "server": "DB-MSE with phoneme Macro-MSE checkpoint selection; current server source.",
+      "sb": "Score-balanced-loss comparison; current server SB source."
+    }
+  },
+  "hmamba": {
+    "cwd": "05_hmamba",
+    "scripts": {
+      "server": "traintest_BOMA.py",
+      "sb": "traintest_BOMA_SB_loss.py"
+    },
+    "arguments": [
+      "--save-last-epoch",
+      "--phn-dict",
+      "local/so762/vocab_merge.json",
+      "--seed",
+      "824",
+      "--lr",
+      "0.002",
+      "--warmup-step",
+      "300",
+      "--batch-size",
+      "50",
+      "--n-epochs",
+      "20",
+      "--model",
+      "HMamba",
+      "--model-conf",
+      "conf/so762/HMamba.yaml",
+      "--am",
+      "librispeech",
+      "--loss-w-phn",
+      "1",
+      "--loss-w-word",
+      "1",
+      "--loss-w-utt",
+      "1",
+      "--loss-type",
+      "dexent",
+      "--loss-w-a",
+      "0.7",
+      "--loss-w-xent",
+      "0.003",
+      "--gop-dir",
+      "data/so762/gop-librispeech-bies",
+      "--raw-dir",
+      "data/so762/raw-audio",
+      "--ssl-dir",
+      "data/so762/wav2vec2-large-xlsr-53 data/so762/hubert-large-ll60k data/so762/wavlm-large"
+    ],
+    "required": [
+      "05_hmamba/data/so762/gop-librispeech-bies/train/feat.npy",
+      "05_hmamba/utt_ids_train_orden_mi_train",
+      "05_hmamba/conf/so762/HMamba.yaml",
+      "05_hmamba/local/so762/vocab_merge.json"
+    ],
+    "semantics": {
+      "server": "DB-MSE with phoneme Macro-MSE checkpoint selection; current server source.",
+      "sb": "Score-balanced-loss comparison; current server SB source."
+    }
+  }
+}

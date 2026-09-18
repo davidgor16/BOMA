@@ -1,0 +1,3 @@
+-r common.txt
+kaldi-io==0.9.4
+kaldiio==2.17.2

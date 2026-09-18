@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-18",
+  "exclusive_source": "testGPU snapshot",
+  "source_file_count": 188,
+  "python_files": 73,
+  "annotation_changes_verified": true,
+  "documentation_sanitization": [
+    "Removed a stale authentication query from an upstream README image URL."
+  ]
+}

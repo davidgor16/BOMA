@@ -1,0 +1,439 @@
+{
+  "date": "2026-09-18",
+  "transfer": {
+    "source": "Experiment-server snapshot",
+    "files": 2687,
+    "uncompressed_bytes": 19928694030,
+    "archive_bytes": 5890033549,
+    "mismatches": [],
+    "elapsed_seconds": 387.15780544281006
+  },
+  "archive_verification": {
+    "status": "pass",
+    "packages": 18,
+    "parts": 22,
+    "files": 2418,
+    "bytes": 19891001239,
+    "results": [
+      {
+        "package": "conpco-data",
+        "files": 23,
+        "bytes": 7629017710,
+        "status": "pass"
+      },
+      {
+        "package": "conpco-experiments",
+        "files": 355,
+        "bytes": 118543541,
+        "status": "pass"
+      },
+      {
+        "package": "conpco-supplementary",
+        "files": 5,
+        "bytes": 720778,
+        "status": "pass"
+      },
+      {
+        "package": "gopt-data",
+        "files": 34,
+        "bytes": 758044202,
+        "status": "pass"
+      },
+      {
+        "package": "gopt-experiments",
+        "files": 356,
+        "bytes": 62778577,
+        "status": "pass"
+      },
+      {
+        "package": "gopt-supplementary",
+        "files": 8,
+        "bytes": 1082922,
+        "status": "pass"
+      },
+      {
+        "package": "hiertfr-data",
+        "files": 15,
+        "bytes": 207395671,
+        "status": "pass"
+      },
+      {
+        "package": "hiertfr-experiments",
+        "files": 356,
+        "bytes": 97759851,
+        "status": "pass"
+      },
+      {
+        "package": "hiertfr-supplementary",
+        "files": 5,
+        "bytes": 798421,
+        "status": "pass"
+      },
+      {
+        "package": "hipama-data",
+        "files": 8,
+        "bytes": 180201024,
+        "status": "pass"
+      },
+      {
+        "package": "hipama-experiments",
+        "files": 356,
+        "bytes": 63297413,
+        "status": "pass"
+      },
+      {
+        "package": "hipama-supplementary",
+        "files": 5,
+        "bytes": 720537,
+        "status": "pass"
+      },
+      {
+        "package": "hmamba-data",
+        "files": 34,
+        "bytes": 6650433712,
+        "status": "pass"
+      },
+      {
+        "package": "hmamba-experiments",
+        "files": 390,
+        "bytes": 371902656,
+        "status": "pass"
+      },
+      {
+        "package": "hmamba-supplementary",
+        "files": 11,
+        "bytes": 617456,
+        "status": "pass"
+      },
+      {
+        "package": "m3c-data",
+        "files": 36,
+        "bytes": 3646604608,
+        "status": "pass"
+      },
+      {
+        "package": "m3c-experiments",
+        "files": 416,
+        "bytes": 100609852,
+        "status": "pass"
+      },
+      {
+        "package": "m3c-supplementary",
+        "files": 5,
+        "bytes": 472308,
+        "status": "pass"
+      }
+    ]
+  },
+  "annotation_verification": {
+    "python_files": 73,
+    "replacements": 481,
+    "executable_ast_equal": true,
+    "executable_tokens_equal": true
+  },
+  "smoke_gopt_cpu": {
+    "status": "pass",
+    "utterances": 4,
+    "device": "cpu",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "torch": "2.5.1+cu121",
+    "numpy": "2.4.4",
+    "checkpoint": "01_gopt/exp/gopt-BOMA/fold_1/models/best_audio_model.pth",
+    "loss": 0.09026557207107544,
+    "output_shapes": [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        50,
+        1
+      ],
+      [
+        4,
+        50,
+        1
+      ],
+      [
+        4,
+        50,
+        1
+      ],
+      [
+        4,
+        50,
+        1
+      ]
+    ],
+    "optimizer_steps": 0,
+    "saved_checkpoints": 0,
+    "saved_predictions": 0
+  },
+  "launch_dry_runs": [
+    {
+      "model": "gopt",
+      "variant": "server",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "gopt",
+      "variant": "sb",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "hipama",
+      "variant": "server",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "hipama",
+      "variant": "sb",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "hiertfr",
+      "variant": "server",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "hiertfr",
+      "variant": "sb",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "conpco",
+      "variant": "server",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "conpco",
+      "variant": "sb",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "m3c",
+      "variant": "server",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "m3c",
+      "variant": "sb",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "hmamba",
+      "variant": "server",
+      "exit_code": 0,
+      "arguments_exist": true
+    },
+    {
+      "model": "hmamba",
+      "variant": "sb",
+      "exit_code": 0,
+      "arguments_exist": true
+    }
+  ],
+  "server_cli_help": {
+    "gopt": {
+      "exit_code": 0,
+      "help_displayed": true,
+      "model_construction_tested": false
+    },
+    "hipama": {
+      "exit_code": 0,
+      "help_displayed": true,
+      "model_construction_tested": false
+    },
+    "hiertfr": {
+      "exit_code": 0,
+      "help_displayed": true,
+      "model_construction_tested": false
+    },
+    "conpco": {
+      "exit_code": 0,
+      "help_displayed": true,
+      "model_construction_tested": false
+    },
+    "hmamba": {
+      "exit_code": 0,
+      "help_displayed": true,
+      "model_construction_tested": false
+    },
+    "m3c": {
+      "exit_code": 0,
+      "help_displayed": true,
+      "model_construction_tested": false
+    }
+  },
+  "prediction_integrity": {
+    "prediction_sets": 180,
+    "complete_finite_size_matched": 170,
+    "issues": [
+      {
+        "path": "05_hmamba/exp/hmamba-BOMA/0/fold_1/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-BOMA/0/fold_2/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-BOMA/0/fold_3/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-BOMA/0/fold_4/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-BOMA/0/fold_5/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-original/0/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-original/1/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)",
+          "utt_pred.npy: FileNotFoundError"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-original/2/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word_target.npy: FileNotFoundError"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-original/3/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      },
+      {
+        "path": "05_hmamba/exp/hmamba-original/4/preds",
+        "issues": [
+          "phn: prediction (2500, 52, 1), target (2500, 50)",
+          "word: prediction (15966, 3), target (15967, 3)"
+        ]
+      }
+    ]
+  },
+  "restoration_integration": {
+    "packages": [
+      "gopt-data",
+      "gopt-experiments"
+    ],
+    "files": 390,
+    "status": "pass"
+  },
+  "gopt_saved_evaluation": {
+    "iterations": 1000,
+    "seed": 0,
+    "bins": "uniform5",
+    "macro_min_support": 1,
+    "runs": 5,
+    "comparison_to_table_vii": {
+      "P-ACC": {
+        "recomputed": 0.5972473687874087,
+        "manuscript": 0.597,
+        "equal_at_three_decimals": true
+      },
+      "W-ACC": {
+        "recomputed": 0.5945592889694783,
+        "manuscript": 0.595,
+        "equal_at_three_decimals": true
+      },
+      "W-STR": {
+        "recomputed": 0.5989019069936611,
+        "manuscript": 0.599,
+        "equal_at_three_decimals": true
+      },
+      "W-TOT": {
+        "recomputed": 0.5281577273897176,
+        "manuscript": 0.528,
+        "equal_at_three_decimals": true
+      },
+      "U-ACC": {
+        "recomputed": 0.7484403283087062,
+        "manuscript": 0.748,
+        "equal_at_three_decimals": true
+      },
+      "U-COM": {
+        "recomputed": 0.04620483355566806,
+        "manuscript": 0.046,
+        "equal_at_three_decimals": true
+      },
+      "U-FLU": {
+        "recomputed": 0.7956707553703654,
+        "manuscript": 0.796,
+        "equal_at_three_decimals": true
+      },
+      "U-PRO": {
+        "recomputed": 0.8192017644936487,
+        "manuscript": 0.819,
+        "equal_at_three_decimals": true
+      },
+      "U-TOT": {
+        "recomputed": 0.7920389842624926,
+        "manuscript": 0.792,
+        "equal_at_three_decimals": true
+      }
+    }
+  },
+  "not_tested": [
+    "Full retraining of all six models",
+    "Clean installation of all six environments",
+    "Semantic realignment of mismatched HMamba arrays"
+  ]
+}

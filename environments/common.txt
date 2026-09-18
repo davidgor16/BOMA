@@ -1,0 +1,11 @@
+# Linux x86-64 / Python 3.10. Pins observed in the testGPU environment.
+# Tested execution is documented separately; this is not a historical lockfile.
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.1.1+cu118
+numpy==1.23.5
+scipy==1.10.1
+pandas==2.0.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+seaborn==0.13.2
+PyYAML==6.0.3

@@ -1,0 +1,5 @@
+-r common.txt
+# ESPnet version stated in the archived model README; installation not yet certified.
+espnet==202402
+dgl==2.1.0
+torchdata==0.7.1

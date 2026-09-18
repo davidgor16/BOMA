@@ -1,0 +1,22 @@
+# Research artifacts are distributed separately and verified by metadata manifests.
+**/exp/
+**/exp_hierTFR/
+**/venv*/
+**/.venv*/
+**/__pycache__/
+*.pyc
+*.npy
+*.npz
+*.pth
+*.pt
+*.zip
+*.tar
+*.tar.gz*
+*.out
+.artifact-cache/
+runs/
+wandb/
+.DS_Store
+__MACOSX/
+*.restoring
+*.download

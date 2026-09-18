@@ -1,0 +1,290 @@
+[
+  {
+    "model": "01_gopt",
+    "condition": "gopt-BOMA",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10871950,
+    "path": "01_gopt/exp/gopt-BOMA"
+  },
+  {
+    "model": "01_gopt",
+    "condition": "gopt-BOMA-SB",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10801445,
+    "path": "01_gopt/exp/gopt-BOMA-SB"
+  },
+  {
+    "model": "01_gopt",
+    "condition": "gopt-CV",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10871951,
+    "path": "01_gopt/exp/gopt-CV"
+  },
+  {
+    "model": "01_gopt",
+    "condition": "gopt-CV-ML",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10871950,
+    "path": "01_gopt/exp/gopt-CV-ML"
+  },
+  {
+    "model": "01_gopt",
+    "condition": "gopt-CV-MS",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10871951,
+    "path": "01_gopt/exp/gopt-CV-MS"
+  },
+  {
+    "model": "01_gopt",
+    "condition": "gopt-original",
+    "prediction_sets": 5,
+    "files": 41,
+    "bytes": 8489330,
+    "path": "01_gopt/exp/gopt-original"
+  },
+  {
+    "model": "02_HiPAMA",
+    "condition": "hipama-BOMA",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10958370,
+    "path": "02_HiPAMA/exp/hipama-BOMA"
+  },
+  {
+    "model": "02_HiPAMA",
+    "condition": "hipama-BOMA-SB",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10888185,
+    "path": "02_HiPAMA/exp/hipama-BOMA-SB"
+  },
+  {
+    "model": "02_HiPAMA",
+    "condition": "hipama-CV",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10958371,
+    "path": "02_HiPAMA/exp/hipama-CV"
+  },
+  {
+    "model": "02_HiPAMA",
+    "condition": "hipama-CV-ML",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10958370,
+    "path": "02_HiPAMA/exp/hipama-CV-ML"
+  },
+  {
+    "model": "02_HiPAMA",
+    "condition": "hipama-CV-MS",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 10958370,
+    "path": "02_HiPAMA/exp/hipama-CV-MS"
+  },
+  {
+    "model": "02_HiPAMA",
+    "condition": "hipama-original",
+    "prediction_sets": 5,
+    "files": 41,
+    "bytes": 8575747,
+    "path": "02_HiPAMA/exp/hipama-original"
+  },
+  {
+    "model": "03_HierTFR",
+    "condition": "hiertfr-BOMA",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 16489345,
+    "path": "03_HierTFR/exp/hiertfr-BOMA"
+  },
+  {
+    "model": "03_HierTFR",
+    "condition": "hiertfr-BOMA-SB",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 16489346,
+    "path": "03_HierTFR/exp/hiertfr-BOMA-SB"
+  },
+  {
+    "model": "03_HierTFR",
+    "condition": "hiertfr-CV",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 16489348,
+    "path": "03_HierTFR/exp/hiertfr-CV"
+  },
+  {
+    "model": "03_HierTFR",
+    "condition": "hiertfr-CV-ML",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 16489347,
+    "path": "03_HierTFR/exp/hiertfr-CV-ML"
+  },
+  {
+    "model": "03_HierTFR",
+    "condition": "hiertfr-CV-MS",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 16489345,
+    "path": "03_HierTFR/exp/hiertfr-CV-MS"
+  },
+  {
+    "model": "03_HierTFR",
+    "condition": "hiertfr-original",
+    "prediction_sets": 5,
+    "files": 40,
+    "bytes": 14096362,
+    "path": "03_HierTFR/exp/hiertfr-original"
+  },
+  {
+    "model": "04_ConPCO",
+    "condition": "conpco-BOMA",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 20166295,
+    "path": "04_ConPCO/exp/conpco-BOMA"
+  },
+  {
+    "model": "04_ConPCO",
+    "condition": "conpco-BOMA-SB",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 20095792,
+    "path": "04_ConPCO/exp/conpco-BOMA-SB"
+  },
+  {
+    "model": "04_ConPCO",
+    "condition": "conpco-CV",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 20166298,
+    "path": "04_ConPCO/exp/conpco-CV"
+  },
+  {
+    "model": "04_ConPCO",
+    "condition": "conpco-CV-ML",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 20166295,
+    "path": "04_ConPCO/exp/conpco-CV-ML"
+  },
+  {
+    "model": "04_ConPCO",
+    "condition": "conpco-CV-MS",
+    "prediction_sets": 5,
+    "files": 63,
+    "bytes": 20166298,
+    "path": "04_ConPCO/exp/conpco-CV-MS"
+  },
+  {
+    "model": "04_ConPCO",
+    "condition": "conpco-original",
+    "prediction_sets": 5,
+    "files": 40,
+    "bytes": 17782563,
+    "path": "04_ConPCO/exp/conpco-original"
+  },
+  {
+    "model": "05_hmamba",
+    "condition": "hmamba-BOMA",
+    "prediction_sets": 5,
+    "files": 62,
+    "bytes": 60275660,
+    "path": "05_hmamba/exp/hmamba-BOMA"
+  },
+  {
+    "model": "05_hmamba",
+    "condition": "hmamba-BOMA-SB",
+    "prediction_sets": 5,
+    "files": 62,
+    "bytes": 60375600,
+    "path": "05_hmamba/exp/hmamba-BOMA-SB"
+  },
+  {
+    "model": "05_hmamba",
+    "condition": "hmamba-CV",
+    "prediction_sets": 5,
+    "files": 62,
+    "bytes": 60375601,
+    "path": "05_hmamba/exp/hmamba-CV"
+  },
+  {
+    "model": "05_hmamba",
+    "condition": "hmamba-CV-ML",
+    "prediction_sets": 5,
+    "files": 62,
+    "bytes": 60375600,
+    "path": "05_hmamba/exp/hmamba-CV-ML"
+  },
+  {
+    "model": "05_hmamba",
+    "condition": "hmamba-CV-MS",
+    "prediction_sets": 5,
+    "files": 62,
+    "bytes": 60375601,
+    "path": "05_hmamba/exp/hmamba-CV-MS"
+  },
+  {
+    "model": "05_hmamba",
+    "condition": "hmamba-original",
+    "prediction_sets": 5,
+    "files": 80,
+    "bytes": 70124594,
+    "path": "05_hmamba/exp/hmamba-original"
+  },
+  {
+    "model": "06_M3C",
+    "condition": "M3C-BOMA",
+    "prediction_sets": 5,
+    "files": 73,
+    "bytes": 17118317,
+    "path": "06_M3C/exp/M3C-BOMA"
+  },
+  {
+    "model": "06_M3C",
+    "condition": "M3C-BOMA-SB",
+    "prediction_sets": 5,
+    "files": 73,
+    "bytes": 17118321,
+    "path": "06_M3C/exp/M3C-BOMA-SB"
+  },
+  {
+    "model": "06_M3C",
+    "condition": "M3C-CV",
+    "prediction_sets": 5,
+    "files": 73,
+    "bytes": 17188829,
+    "path": "06_M3C/exp/M3C-CV"
+  },
+  {
+    "model": "06_M3C",
+    "condition": "M3C-CV-ML",
+    "prediction_sets": 5,
+    "files": 73,
+    "bytes": 17188822,
+    "path": "06_M3C/exp/M3C-CV-ML"
+  },
+  {
+    "model": "06_M3C",
+    "condition": "M3C-CV-MS",
+    "prediction_sets": 5,
+    "files": 73,
+    "bytes": 17188828,
+    "path": "06_M3C/exp/M3C-CV-MS"
+  },
+  {
+    "model": "06_M3C",
+    "condition": "M3C-original",
+    "prediction_sets": 5,
+    "files": 51,
+    "bytes": 14806735,
+    "path": "06_M3C/exp/M3C-original"
+  }
+]
