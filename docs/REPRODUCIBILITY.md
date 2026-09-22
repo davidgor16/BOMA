@@ -21,7 +21,7 @@ Full retraining of all architectures and clean installation of all six environme
 
 ### Speaker partitioning
 
-The current scripts use `GroupKFold(n_splits=5)`. This separates speaker groups but does not perform iterative multilabel stratification. Passing the multilabel matrix as `y` does not change this: [GroupKFold ignores `y`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html). The manuscript's description of iterative multilabel stratification therefore requires reconciliation with the preserved implementation or an independently archived fold assignment.
+The current scripts use `GroupKFold(n_splits=5)`. This separates speaker groups but does not perform iterative multilabel stratification. Passing the multilabel matrix as `y` does not change this: [GroupKFold ignores `y`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html). The manuscript and supplementary material now describe speaker-grouped cross-validation to match this implementation; phonetic and proficiency labels do not stratify the folds.
 
 [group_folds.json](../metadata/group_folds.json) records the fold indices regenerated with the server's scikit-learn 1.7.2, original utterance-order files and the exact current GroupKFold procedure. Each model has 2,500 utterances and 125 speakers; each validation fold contains 500 utterances and 25 speakers, with no speaker overlap with training. These are regenerated current-procedure assignments, not independent proof of the historical fold membership used for every archived run.
 

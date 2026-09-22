@@ -25,6 +25,19 @@ This repository preserves the six model implementations and experimental artifac
 
 The saved experiment collection contains `original`, `CV`, `CV-DB`, `CV-MS`, `BOMA`, and `BOMA-SB` conditions for each architecture. These results are distributed separately from Git history. See [data and experiment layout](docs/DATA.md) and the [experiment catalogue](docs/EXPERIMENTS.md).
 
+## Model-specific supplementary results
+
+Each PDF contains the five detailed component and loss-function ablation tables for one architecture, with the reporting conventions and model-specific interpretation. These tables have been moved out of the journal supplementary material; their numerical results are unchanged.
+
+| Model | Supplementary results |
+|---|---|
+| GOPT | [PDF](01_gopt/supplementary_results/Supplementary_Results_GOPT.pdf) |
+| HiPAMA | [PDF](02_HiPAMA/supplementary_results/Supplementary_Results_HiPAMA.pdf) |
+| HierTFR | [PDF](03_HierTFR/supplementary_results/Supplementary_Results_HierTFR.pdf) |
+| ConPCO | [PDF](04_ConPCO/supplementary_results/Supplementary_Results_ConPCO.pdf) |
+| HMamba | [PDF](05_hmamba/supplementary_results/Supplementary_Results_HMamba.pdf) |
+| M3C | [PDF](06_M3C/supplementary_results/Supplementary_Results_M3C.pdf) |
+
 ## Quick start: inspect saved predictions
 
 Clone the repository and create a Python 3.10 environment. The following Bash example installs only analysis dependencies:
