@@ -489,7 +489,9 @@
       "bytes": 991,
       "sha256": "ae3f754fc2d5dfc4802f5d12494452f25ca783b21592730c90bc621306b0fbe0",
       "mode": 33252,
-      "publication_sha256": "ae3f754fc2d5dfc4802f5d12494452f25ca783b21592730c90bc621306b0fbe0"
+      "publication_sha256": "099c310e8a86b821ed3395a785bdf59581d3cb061a73f4799d33e63ffa5e2bfc",
+      "before_db_rename_publication_sha256": "ae3f754fc2d5dfc4802f5d12494452f25ca783b21592730c90bc621306b0fbe0",
+      "terminology_change": "Macro-Loss path abbreviation ML renamed to DB (Dynamic Balanced MSE); numerical operations unchanged."
     },
     "03_HierTFR/src/run_pretrain.sh": {
       "original_path": "03_HierTFR/src/run_pretrain.sh",
@@ -1228,8 +1230,11 @@
       "bytes": 7603,
       "sha256": "73be50154b563d4de56d29f37e4871f889f80f7a6780d7fed85407175512f543",
       "mode": 33188,
-      "publication_sha256": "85cc38b78f1f82b8afff70fcbf3c55f49787f9198f13f89dca4f749ab2b3be6c",
-      "executable_ast_sha256": "3cd9f1ecf43ce5ebef65ee236af709716da307402ceb08970bd619a9a4c9e0dd"
+      "publication_sha256": "df998b50ba049d05cf03276c04d0d059c1407b83122ec9142f0618d8872b1440",
+      "executable_ast_sha256": "de449fbe561266270edea4b0060147c07cf3080f5af2487da65d72295ee6a85a",
+      "before_db_rename_publication_sha256": "85cc38b78f1f82b8afff70fcbf3c55f49787f9198f13f89dca4f749ab2b3be6c",
+      "terminology_change": "Macro-Loss path abbreviation ML renamed to DB (Dynamic Balanced MSE); numerical operations unchanged.",
+      "before_db_rename_executable_ast_sha256": "3cd9f1ecf43ce5ebef65ee236af709716da307402ceb08970bd619a9a4c9e0dd"
     },
     "models_analysis/calculate_micro_macro_mse.py": {
       "original_path": "models_analysis/calculate_micro_macro_mse.py",

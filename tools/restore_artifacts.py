@@ -53,11 +53,13 @@ def main():
         count=0
         with io.BufferedReader(JoinedParts(paths)) as joined,gzip.GzipFile(fileobj=joined,mode='rb') as uncompressed,tarfile.open(fileobj=uncompressed,mode='r|') as archive:
             for member in archive:
-                rel=PurePosixPath(member.name)
-                if not member.isfile() or rel.is_absolute() or '..' in rel.parts or member.name not in expected:raise ValueError('Unexpected archive member: '+member.name)
+                # Map historical Macro-Loss archive paths to the current DB terminology.
+                current_name=member.name.replace('CV-ML','CV-DB').replace('CV_ML','CV_DB')
+                rel=PurePosixPath(current_name)
+                if not member.isfile() or rel.is_absolute() or '..' in rel.parts or current_name not in expected:raise ValueError('Unexpected archive member: '+member.name)
                 target=destination.joinpath(*rel.parts).resolve()
                 if not target.is_relative_to(destination):raise ValueError('Archive path escapes the destination.')
-                record=expected[member.name]
+                record=expected[current_name]
                 if member.size!=record['bytes']:raise ValueError('Member size mismatch: '+member.name)
                 count+=1
                 if target.exists():

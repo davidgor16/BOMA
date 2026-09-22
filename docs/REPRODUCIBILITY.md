@@ -4,7 +4,7 @@
 
 The publication source is the experiment-server tree captured on 2026-09-18. No file from the earlier local research directory was selected as a substitute. The captured BOMA scripts use DB-MSE and phoneme Macro-MSE model selection.
 
-English annotation edits are checked against the captured files in two ways: equality of executable Python tokens, excluding comments and recognized docstrings, and equality of the AST after removing docstrings. Numerical operations, paths, arguments, seeds, split logic, model topology and saved outputs are retained. [source_manifest.json](../metadata/source_manifest.json) records original and publication hashes. The new `tools/` scripts are separate conveniences and are not edits to the research algorithms.
+English annotation edits are checked against the captured files in two ways: equality of executable Python tokens, excluding comments and recognized docstrings, and equality of the AST after removing docstrings. Numerical operations, arguments, seeds, split logic, model topology and saved outputs are retained. A subsequent terminology-only update renames Macro-Loss experiment paths to Dynamic Balanced MSE (DB); the source manifest records these path changes separately from the original annotation-only checks. [source_manifest.json](../metadata/source_manifest.json) records original and publication hashes. The new `tools/` scripts are separate conveniences and are not edits to the research algorithms.
 
 ## Validation scope
 
@@ -43,7 +43,7 @@ When all targets in a batch are equal, the preserved loss returns the expected n
 
 ### Historical experiment variants
 
-Saved conditions include `original`, `CV`, `CV-ML`, `CV-MS`, `BOMA`, and `BOMA-SB`. Their directory names are retained, but separate immutable training-source versions for every historical condition are not all available in this tree. The new launcher exposes only the captured BOMA and SB scripts; it does not invent missing ablation implementations.
+Saved conditions include `original`, `CV`, `CV-DB`, `CV-MS`, `BOMA`, and `BOMA-SB`. The Dynamic Balanced MSE condition now uses `CV-DB`. Previously released archives retain their historical member names; restoration maps these to DB without changing file contents or checksums. Separate immutable training-source versions for every historical condition are not all available in this tree. The new launcher exposes only the captured BOMA and SB scripts; it does not invent missing ablation implementations.
 
 ### Launchers and repeatability
 

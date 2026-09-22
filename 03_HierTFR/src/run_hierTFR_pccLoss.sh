@@ -27,7 +27,7 @@ embed_dim=24
 model=gopt
 am=librispeech
 
-exp_dir=../exp/hiertfr-CV-ML
+exp_dir=../exp/hiertfr-CV-DB
 
 # repeat times
 repeat_list=(0)

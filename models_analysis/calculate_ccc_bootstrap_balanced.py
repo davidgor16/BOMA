@@ -106,7 +106,7 @@ resultados_totales = []
 print(f"[INFO] Iniciando evaluación rigurosa (CCC con Balanceo Adaptativo por Mediana, {ITERACIONES_BOOTSTRAP} iteraciones)...")
 
 for run in range(1, num_runs + 1):
-    dir_media = f"../05_hmamba/exp/hmamba-CV-ML/0/fold_{run}/preds"
+    dir_media = f"../05_hmamba/exp/hmamba-CV-DB/0/fold_{run}/preds"
 
     
     try:

@@ -23,7 +23,7 @@ This repository preserves the six model implementations and experimental artifac
 | `environments/` | Environment recipes by model and for analysis |
 | `metadata/` | Source provenance, checksums, launch settings and artifact index |
 
-The saved experiment collection contains `original`, `CV`, `CV-ML`, `CV-MS`, `BOMA`, and `BOMA-SB` conditions for each architecture. These results are distributed separately from Git history. See [data and experiment layout](docs/DATA.md) and the [experiment catalogue](docs/EXPERIMENTS.md).
+The saved experiment collection contains `original`, `CV`, `CV-DB`, `CV-MS`, `BOMA`, and `BOMA-SB` conditions for each architecture. These results are distributed separately from Git history. See [data and experiment layout](docs/DATA.md) and the [experiment catalogue](docs/EXPERIMENTS.md).
 
 ## Quick start: inspect saved predictions
 

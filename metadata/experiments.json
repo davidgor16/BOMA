@@ -25,11 +25,11 @@
   },
   {
     "model": "01_gopt",
-    "condition": "gopt-CV-ML",
+    "condition": "gopt-CV-DB",
     "prediction_sets": 5,
     "files": 63,
     "bytes": 10871950,
-    "path": "01_gopt/exp/gopt-CV-ML"
+    "path": "01_gopt/exp/gopt-CV-DB"
   },
   {
     "model": "01_gopt",
@@ -73,11 +73,11 @@
   },
   {
     "model": "02_HiPAMA",
-    "condition": "hipama-CV-ML",
+    "condition": "hipama-CV-DB",
     "prediction_sets": 5,
     "files": 63,
     "bytes": 10958370,
-    "path": "02_HiPAMA/exp/hipama-CV-ML"
+    "path": "02_HiPAMA/exp/hipama-CV-DB"
   },
   {
     "model": "02_HiPAMA",
@@ -121,11 +121,11 @@
   },
   {
     "model": "03_HierTFR",
-    "condition": "hiertfr-CV-ML",
+    "condition": "hiertfr-CV-DB",
     "prediction_sets": 5,
     "files": 63,
     "bytes": 16489347,
-    "path": "03_HierTFR/exp/hiertfr-CV-ML"
+    "path": "03_HierTFR/exp/hiertfr-CV-DB"
   },
   {
     "model": "03_HierTFR",
@@ -169,11 +169,11 @@
   },
   {
     "model": "04_ConPCO",
-    "condition": "conpco-CV-ML",
+    "condition": "conpco-CV-DB",
     "prediction_sets": 5,
     "files": 63,
     "bytes": 20166295,
-    "path": "04_ConPCO/exp/conpco-CV-ML"
+    "path": "04_ConPCO/exp/conpco-CV-DB"
   },
   {
     "model": "04_ConPCO",
@@ -217,11 +217,11 @@
   },
   {
     "model": "05_hmamba",
-    "condition": "hmamba-CV-ML",
+    "condition": "hmamba-CV-DB",
     "prediction_sets": 5,
     "files": 62,
     "bytes": 60375600,
-    "path": "05_hmamba/exp/hmamba-CV-ML"
+    "path": "05_hmamba/exp/hmamba-CV-DB"
   },
   {
     "model": "05_hmamba",
@@ -265,11 +265,11 @@
   },
   {
     "model": "06_M3C",
-    "condition": "M3C-CV-ML",
+    "condition": "M3C-CV-DB",
     "prediction_sets": 5,
     "files": 73,
     "bytes": 17188822,
-    "path": "06_M3C/exp/M3C-CV-ML"
+    "path": "06_M3C/exp/M3C-CV-DB"
   },
   {
     "model": "06_M3C",
