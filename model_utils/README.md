@@ -24,8 +24,8 @@ It is not a percentage conversion of Jensen-Shannon or Wasserstein distance.
   Padding and HMamba's unscored silence/boundary entries are excluded.
 - **UTT-Mean:** arithmetic mean of the five utterance annotations (accuracy,
   completeness, fluency, prosody and total), on their original 0–10 scale.
-  This is distinct from U-TOT. By default, use 10 equal-width bins (1 point):
-  `[0,1), ..., [9,10]`. Scores are computed in float64 and rounded to six
+  This is distinct from U-TOT. By default, use 20 equal-width bins (0.5 points):
+  `[0,0.5), ..., [9.5,10]`. Scores are computed in float64 and rounded to six
   decimal places before binning. This makes boundary placement reproducible;
   historical plots computed after float32 normalization can place exact boundary
   values in adjacent bins. The percentage depends on binning, so always report it.
@@ -76,14 +76,14 @@ are replaced. Missing or mismatched labels and changed utterance ordering fail
 explicitly. `--utt-bins N` changes the UTT-Mean binning and records the resulting
 edges in the output.
 
-## Results with 10 UTT-Mean bins
+## Results with 20 UTT-Mean bins
 
 | Distribution | Subset vs full training | Mean overlap | Minimum | Maximum |
 |---|---|---:|---:|---:|
 | Phonemes | Fold training | 99.5234% | 99.3929% | 99.6076% |
 | Phonemes | Fold validation | 98.0923% | 97.6089% | 98.4323% |
-| UTT-Mean | Fold training | 97.7820% | 96.9100% | 98.9700% |
-| UTT-Mean | Fold validation | 91.1280% | 87.6400% | 95.8800% |
+| UTT-Mean | Fold training | 97.5053% | 96.8100% | 98.7500% |
+| UTT-Mean | Fold validation | 90.0213% | 87.2400% | 95.0000% |
 
 [Per-model and per-fold CSV](results/fold_similarity.csv) and
 [full JSON report](results/summary.json) include all 60 comparisons. The JSON
@@ -91,6 +91,14 @@ also includes input hashes, frequency counts, explicit bin edges, per-model
 summaries, Jensen-Shannon distance for phonemes and Wasserstein-1 distance for
 UTT-Mean in original score points. The latter compares the full empirical score
 distributions without histogram bins.
+
+The [shared training UTT-Mean figure](results/global_train_utt_mean_dist.png) uses
+the same histogram counts and bin edges as the report. Recreate it with:
+
+```bash
+python model_utils/plot_utt_mean_distribution.py \
+  --output model_utils/results/global_train_utt_mean_dist.png
+```
 
 These values describe broadly similar phonetic composition and approximate
 preservation of the score distribution. They do not establish identical tails,
