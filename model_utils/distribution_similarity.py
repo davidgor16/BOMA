@@ -145,7 +145,7 @@ def summarize(rows: list[dict]) -> dict:
     }
 
 
-def calculate(data_roots: list[Path], utt_bins: int = 20) -> tuple[list[dict], dict]:
+def calculate(data_roots: list[Path], utt_bins: int = 10) -> tuple[list[dict], dict]:
     if utt_bins < 1:
         raise ValueError("--utt-bins must be a positive integer.")
     assignments = json.loads(ASSIGNMENTS.read_text(encoding="utf-8"))
@@ -224,7 +224,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-root", action="append", type=Path,
                         help="Root containing restored model folders; repeat to search several roots. Defaults to the repository.")
-    parser.add_argument("--utt-bins", type=int, default=20, help="Equal-width UTT-Mean bins over [0,10] (default: 20).")
+    parser.add_argument("--utt-bins", type=int, default=10, help="Equal-width UTT-Mean bins over [0,10] (default: 10).")
     parser.add_argument("--output-dir", type=Path, required=True, help="Write summary.json and fold_similarity.csv here.")
     args = parser.parse_args()
     try:
