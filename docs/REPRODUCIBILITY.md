@@ -25,6 +25,13 @@ The current scripts use `GroupKFold(n_splits=5)`. This separates speaker groups 
 
 [group_folds.json](../metadata/group_folds.json) records the fold indices regenerated with the server's scikit-learn 1.7.2, original utterance-order files and the exact current GroupKFold procedure. Each model has 2,500 utterances and 125 speakers; each validation fold contains 500 utterances and 25 speakers, with no speaker overlap with training. These are regenerated current-procedure assignments, not independent proof of the historical fold membership used for every archived run.
 
+The [BOMA distribution audit](../model_utils/README.md) identifies two fold profiles
+in the archived distribution figures. It uses explicit reconstructed speaker
+assignments matching those profiles, independently of the installed splitter,
+and calculates distribution overlap percentages for all six BOMA experiments.
+The assignment provenance, figure hashes and distinction from the later
+`group_folds.json` regeneration are documented with the script and results.
+
 ### Metric conventions
 
 The standalone Macro-MSE script uses `min_support=5`; the manuscript describes including every occupied bin (`min_support=1`). CCC-BS uses right-closed intervals, whereas the original MSE function uses the left-closed default of `np.digitize`. The helper makes the support and bin choices explicit and records them without changing these original functions.

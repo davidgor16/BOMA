@@ -1,0 +1,882 @@
+{
+  "format_version": 1,
+  "scope": "Only the BOMA experiment for each of the six models.",
+  "status": "Reconstructed speaker assignments checked against archived distribution figures; not independently saved historical membership logs.",
+  "provenance": {
+    "profile_a": "Assignments in metadata/group_folds.json, regenerated on the experiment server; their distributions match the archived figures for the four models assigned profile_a.",
+    "profile_b": "Alternative GroupKFold assignments reconstructed with scikit-learn 1.7.2 and NumPy 2.4.4; their distributions match the archived figures for the two models assigned profile_b.",
+    "version_independence": "The analysis uses these explicit speaker lists and never invokes a splitter.",
+    "caution": "metadata/group_folds.json records the current-procedure regeneration for all six models, not every historical run. This file does not replace that record.",
+    "figure_check": "All five validation phoneme bar profiles of both assignments were compared with the archived PNGs. Identical archived figure SHA-256 values establish shared plots across the associated experiments. HMamba includes unscored silence tokens, excluded from the common 39-phoneme comparison."
+  },
+  "profiles": {
+    "profile_a": {
+      "validation_speakers": [
+        [
+          "00006",
+          "00054",
+          "00104",
+          "00560",
+          "00960",
+          "01042",
+          "01197",
+          "01336",
+          "01419",
+          "02036",
+          "02129",
+          "02236",
+          "02981",
+          "03046",
+          "03208",
+          "05195",
+          "05418",
+          "06121",
+          "06912",
+          "08585",
+          "09604",
+          "09613",
+          "09624",
+          "09639",
+          "09649"
+        ],
+        [
+          "00026",
+          "00056",
+          "00131",
+          "00575",
+          "01012",
+          "01092",
+          "01362",
+          "01435",
+          "02034",
+          "02168",
+          "02242",
+          "02380",
+          "02402",
+          "03002",
+          "03049",
+          "03423",
+          "05218",
+          "05424",
+          "06048",
+          "07001",
+          "09034",
+          "09606",
+          "09614",
+          "09625",
+          "09643"
+        ],
+        [
+          "00036",
+          "00070",
+          "00135",
+          "00594",
+          "01027",
+          "01064",
+          "01203",
+          "01372",
+          "01439",
+          "02059",
+          "02170",
+          "02244",
+          "02427",
+          "02450",
+          "03020",
+          "03068",
+          "03636",
+          "05401",
+          "05551",
+          "07551",
+          "09070",
+          "09607",
+          "09615",
+          "09628",
+          "09645"
+        ],
+        [
+          "00048",
+          "00075",
+          "00145",
+          "00739",
+          "01029",
+          "01044",
+          "01260",
+          "01407",
+          "01447",
+          "02061",
+          "02179",
+          "02251",
+          "02621",
+          "03021",
+          "03083",
+          "03837",
+          "05408",
+          "06010",
+          "06504",
+          "08002",
+          "09556",
+          "09611",
+          "09616",
+          "09630",
+          "09646"
+        ],
+        [
+          "00001",
+          "00005",
+          "00053",
+          "00103",
+          "00482",
+          "00813",
+          "01033",
+          "01309",
+          "01418",
+          "02022",
+          "02089",
+          "02208",
+          "02282",
+          "02430",
+          "02799",
+          "03023",
+          "03088",
+          "04005",
+          "05414",
+          "06401",
+          "08057",
+          "09600",
+          "09609",
+          "09619",
+          "09634"
+        ]
+      ]
+    },
+    "profile_b": {
+      "validation_speakers": [
+        [
+          "00036",
+          "00070",
+          "00135",
+          "00594",
+          "01027",
+          "01064",
+          "01309",
+          "01418",
+          "02022",
+          "02089",
+          "02208",
+          "02282",
+          "02450",
+          "03020",
+          "03068",
+          "03636",
+          "05401",
+          "05551",
+          "06504",
+          "08057",
+          "09600",
+          "09611",
+          "09619",
+          "09634",
+          "09649"
+        ],
+        [
+          "00026",
+          "00056",
+          "00131",
+          "00575",
+          "01012",
+          "01044",
+          "01260",
+          "01407",
+          "01447",
+          "02061",
+          "02179",
+          "02251",
+          "02430",
+          "03002",
+          "03049",
+          "03423",
+          "05218",
+          "05424",
+          "06401",
+          "08002",
+          "09556",
+          "09609",
+          "09616",
+          "09630",
+          "09646"
+        ],
+        [
+          "00006",
+          "00054",
+          "00104",
+          "00560",
+          "00960",
+          "01042",
+          "01203",
+          "01372",
+          "01439",
+          "02059",
+          "02170",
+          "02244",
+          "02427",
+          "02981",
+          "03046",
+          "03208",
+          "05195",
+          "05418",
+          "06121",
+          "07551",
+          "09070",
+          "09607",
+          "09615",
+          "09628",
+          "09645"
+        ],
+        [
+          "00005",
+          "00053",
+          "00103",
+          "00482",
+          "00813",
+          "01033",
+          "01197",
+          "01362",
+          "01435",
+          "02036",
+          "02168",
+          "02242",
+          "02402",
+          "02799",
+          "03023",
+          "03088",
+          "04005",
+          "05414",
+          "06048",
+          "07001",
+          "09034",
+          "09606",
+          "09614",
+          "09625",
+          "09643"
+        ],
+        [
+          "00001",
+          "00048",
+          "00075",
+          "00145",
+          "00739",
+          "01029",
+          "01092",
+          "01336",
+          "01419",
+          "02034",
+          "02129",
+          "02236",
+          "02380",
+          "02621",
+          "03021",
+          "03083",
+          "03837",
+          "05408",
+          "06010",
+          "06912",
+          "08585",
+          "09604",
+          "09613",
+          "09624",
+          "09639"
+        ]
+      ]
+    }
+  },
+  "models": {
+    "gopt": {
+      "experiment": "01_gopt/exp/gopt-BOMA",
+      "fold_profile": "profile_a",
+      "utterance_order": "01_gopt/src/utt_ids_train_orden_mi_train",
+      "utterance_order_sha256": "4624b4ef2f598ecfe17d36f228fd3d0f3f2f91d0eea73f08a2c8aae24f0ad1c0",
+      "utterance_labels": "01_gopt/data/seq_data_librispeech/tr_label_utt.npy",
+      "phoneme_labels": "01_gopt/data/seq_data_librispeech/tr_label_phn.npy",
+      "archived_distribution_figures": {
+        "01_gopt/exp/gopt-BOMA/global_train_phoneme_dist.png": {
+          "sha256": "e375a47cd45430623f797250663f55c38138df23a2ece82f2abcf3c99a5a688b",
+          "bytes": 131658
+        },
+        "01_gopt/exp/gopt-BOMA/global_train_utt_score_dist.png": {
+          "sha256": "1119d9c86f4849a4df2325410be87fcf7a280a1efa6efdaa78ca2d8c25bf179d",
+          "bytes": 89721
+        },
+        "01_gopt/exp/gopt-BOMA/fold_1/fold_1_train_phoneme_dist.png": {
+          "sha256": "85a4aaa682eb00a7e5469277e3537efb774c065de1f043fb133b22131f411261",
+          "bytes": 132589
+        },
+        "01_gopt/exp/gopt-BOMA/fold_1/fold_1_train_utt_score_dist.png": {
+          "sha256": "cade4322491ed044f2b783eb3fefac110b4aba9a6d40a582c4c52e988f62f2a3",
+          "bytes": 85194
+        },
+        "01_gopt/exp/gopt-BOMA/fold_1/fold_1_val_phoneme_dist.png": {
+          "sha256": "c104271e575d26f72b3bf1cc1b50692437e0689a73b0c9b8b8fece2aa013d4e9",
+          "bytes": 130776
+        },
+        "01_gopt/exp/gopt-BOMA/fold_1/fold_1_val_utt_score_dist.png": {
+          "sha256": "e0ace70d02ce293bff490d694b38f5939633616d911a3e14a9b2c17e9375fac9",
+          "bytes": 84437
+        },
+        "01_gopt/exp/gopt-BOMA/fold_2/fold_2_train_phoneme_dist.png": {
+          "sha256": "86243c1d287cd8b3d6b7044b99803cabbbce260e2aa5f4c4f108f1ee3425415d",
+          "bytes": 133023
+        },
+        "01_gopt/exp/gopt-BOMA/fold_2/fold_2_train_utt_score_dist.png": {
+          "sha256": "958747dc1a62e6a11ca0e628b34d03fc42ad7c6ca7b85239133bf82519b496da",
+          "bytes": 85231
+        },
+        "01_gopt/exp/gopt-BOMA/fold_2/fold_2_val_phoneme_dist.png": {
+          "sha256": "af7d362c3ef467fea390932d4d91c01eeb482e8298d38f2a63813692cb94b502",
+          "bytes": 131513
+        },
+        "01_gopt/exp/gopt-BOMA/fold_2/fold_2_val_utt_score_dist.png": {
+          "sha256": "cd3d3c84f344b9221e04e3d5dc53ae4bb449ba647895e1ba452e6e432ece6438",
+          "bytes": 85463
+        },
+        "01_gopt/exp/gopt-BOMA/fold_3/fold_3_train_phoneme_dist.png": {
+          "sha256": "123006afdb5bab28b56ddbeff7c0d963465071bc73256fc03e2274b121a0ad26",
+          "bytes": 133694
+        },
+        "01_gopt/exp/gopt-BOMA/fold_3/fold_3_train_utt_score_dist.png": {
+          "sha256": "8e6f65117c32d9c98b77575fa4f23ee91ca87e22a993193c842bbd91b1094fb8",
+          "bytes": 84658
+        },
+        "01_gopt/exp/gopt-BOMA/fold_3/fold_3_val_phoneme_dist.png": {
+          "sha256": "ae43ee4458d9292bef156aa0b9788d8f36deb63f199233f82320a9acb99a1831",
+          "bytes": 113860
+        },
+        "01_gopt/exp/gopt-BOMA/fold_3/fold_3_val_utt_score_dist.png": {
+          "sha256": "3adb8aa887c194538dfec96a02e9898b9f11306004dca2542323d03732d985a9",
+          "bytes": 88288
+        },
+        "01_gopt/exp/gopt-BOMA/fold_4/fold_4_train_phoneme_dist.png": {
+          "sha256": "27420a1e860c99e31254618eca1a5817e5664fed4af5394808c0ccaa3be9d18a",
+          "bytes": 132442
+        },
+        "01_gopt/exp/gopt-BOMA/fold_4/fold_4_train_utt_score_dist.png": {
+          "sha256": "76289b17a057a161c4d42fc2073ab16569fb359c6f7da5ae88e9fdc801eec97b",
+          "bytes": 84727
+        },
+        "01_gopt/exp/gopt-BOMA/fold_4/fold_4_val_phoneme_dist.png": {
+          "sha256": "df796f5215cee48648747f7f6657450d0472ea276c5e9b60960fb6b7b712be32",
+          "bytes": 131376
+        },
+        "01_gopt/exp/gopt-BOMA/fold_4/fold_4_val_utt_score_dist.png": {
+          "sha256": "b29c510974eacec18ace26168bfecdf8230a15134e3282731d1067dc350c7219",
+          "bytes": 84384
+        },
+        "01_gopt/exp/gopt-BOMA/fold_5/fold_5_train_phoneme_dist.png": {
+          "sha256": "fb0001091ae9af0c4d0c373ac7e9c6e7ab10bd799869e32aca79be02b0ffd78e",
+          "bytes": 132770
+        },
+        "01_gopt/exp/gopt-BOMA/fold_5/fold_5_train_utt_score_dist.png": {
+          "sha256": "520e491d830bf9cce1f393fbcc54fb7a20dbdb036dc4916b39443504150029f2",
+          "bytes": 85015
+        },
+        "01_gopt/exp/gopt-BOMA/fold_5/fold_5_val_phoneme_dist.png": {
+          "sha256": "04fbd1c336c5bd5ab188992036c90df07b6ad2d4db4866088054e4521d3fecdd",
+          "bytes": 131676
+        },
+        "01_gopt/exp/gopt-BOMA/fold_5/fold_5_val_utt_score_dist.png": {
+          "sha256": "32e67691912e02a873459f1a8e9fc1ddf9fd24cda47206092c6ce01be987bed1",
+          "bytes": 87992
+        }
+      }
+    },
+    "hipama": {
+      "experiment": "02_HiPAMA/exp/hipama-BOMA",
+      "fold_profile": "profile_a",
+      "utterance_order": "02_HiPAMA/src/utt_ids_train_orden_mi_train",
+      "utterance_order_sha256": "4624b4ef2f598ecfe17d36f228fd3d0f3f2f91d0eea73f08a2c8aae24f0ad1c0",
+      "utterance_labels": "02_HiPAMA/data/seq_data_librispeech/tr_label_utt.npy",
+      "phoneme_labels": "02_HiPAMA/data/seq_data_librispeech/tr_label_phn.npy",
+      "archived_distribution_figures": {
+        "02_HiPAMA/exp/hipama-BOMA/global_train_phoneme_dist.png": {
+          "sha256": "e375a47cd45430623f797250663f55c38138df23a2ece82f2abcf3c99a5a688b",
+          "bytes": 131658
+        },
+        "02_HiPAMA/exp/hipama-BOMA/global_train_utt_score_dist.png": {
+          "sha256": "1119d9c86f4849a4df2325410be87fcf7a280a1efa6efdaa78ca2d8c25bf179d",
+          "bytes": 89721
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_1/fold_1_train_phoneme_dist.png": {
+          "sha256": "85a4aaa682eb00a7e5469277e3537efb774c065de1f043fb133b22131f411261",
+          "bytes": 132589
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_1/fold_1_train_utt_score_dist.png": {
+          "sha256": "cade4322491ed044f2b783eb3fefac110b4aba9a6d40a582c4c52e988f62f2a3",
+          "bytes": 85194
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_1/fold_1_val_phoneme_dist.png": {
+          "sha256": "c104271e575d26f72b3bf1cc1b50692437e0689a73b0c9b8b8fece2aa013d4e9",
+          "bytes": 130776
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_1/fold_1_val_utt_score_dist.png": {
+          "sha256": "e0ace70d02ce293bff490d694b38f5939633616d911a3e14a9b2c17e9375fac9",
+          "bytes": 84437
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_2/fold_2_train_phoneme_dist.png": {
+          "sha256": "86243c1d287cd8b3d6b7044b99803cabbbce260e2aa5f4c4f108f1ee3425415d",
+          "bytes": 133023
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_2/fold_2_train_utt_score_dist.png": {
+          "sha256": "958747dc1a62e6a11ca0e628b34d03fc42ad7c6ca7b85239133bf82519b496da",
+          "bytes": 85231
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_2/fold_2_val_phoneme_dist.png": {
+          "sha256": "af7d362c3ef467fea390932d4d91c01eeb482e8298d38f2a63813692cb94b502",
+          "bytes": 131513
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_2/fold_2_val_utt_score_dist.png": {
+          "sha256": "cd3d3c84f344b9221e04e3d5dc53ae4bb449ba647895e1ba452e6e432ece6438",
+          "bytes": 85463
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_3/fold_3_train_phoneme_dist.png": {
+          "sha256": "123006afdb5bab28b56ddbeff7c0d963465071bc73256fc03e2274b121a0ad26",
+          "bytes": 133694
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_3/fold_3_train_utt_score_dist.png": {
+          "sha256": "8e6f65117c32d9c98b77575fa4f23ee91ca87e22a993193c842bbd91b1094fb8",
+          "bytes": 84658
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_3/fold_3_val_phoneme_dist.png": {
+          "sha256": "ae43ee4458d9292bef156aa0b9788d8f36deb63f199233f82320a9acb99a1831",
+          "bytes": 113860
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_3/fold_3_val_utt_score_dist.png": {
+          "sha256": "3adb8aa887c194538dfec96a02e9898b9f11306004dca2542323d03732d985a9",
+          "bytes": 88288
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_4/fold_4_train_phoneme_dist.png": {
+          "sha256": "27420a1e860c99e31254618eca1a5817e5664fed4af5394808c0ccaa3be9d18a",
+          "bytes": 132442
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_4/fold_4_train_utt_score_dist.png": {
+          "sha256": "76289b17a057a161c4d42fc2073ab16569fb359c6f7da5ae88e9fdc801eec97b",
+          "bytes": 84727
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_4/fold_4_val_phoneme_dist.png": {
+          "sha256": "df796f5215cee48648747f7f6657450d0472ea276c5e9b60960fb6b7b712be32",
+          "bytes": 131376
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_4/fold_4_val_utt_score_dist.png": {
+          "sha256": "b29c510974eacec18ace26168bfecdf8230a15134e3282731d1067dc350c7219",
+          "bytes": 84384
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_5/fold_5_train_phoneme_dist.png": {
+          "sha256": "fb0001091ae9af0c4d0c373ac7e9c6e7ab10bd799869e32aca79be02b0ffd78e",
+          "bytes": 132770
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_5/fold_5_train_utt_score_dist.png": {
+          "sha256": "520e491d830bf9cce1f393fbcc54fb7a20dbdb036dc4916b39443504150029f2",
+          "bytes": 85015
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_5/fold_5_val_phoneme_dist.png": {
+          "sha256": "04fbd1c336c5bd5ab188992036c90df07b6ad2d4db4866088054e4521d3fecdd",
+          "bytes": 131676
+        },
+        "02_HiPAMA/exp/hipama-BOMA/fold_5/fold_5_val_utt_score_dist.png": {
+          "sha256": "32e67691912e02a873459f1a8e9fc1ddf9fd24cda47206092c6ce01be987bed1",
+          "bytes": 87992
+        }
+      }
+    },
+    "hiertfr": {
+      "experiment": "03_HierTFR/exp/hiertfr-BOMA",
+      "fold_profile": "profile_b",
+      "utterance_order": "03_HierTFR/src/utt_ids_train_orden_mi_train",
+      "utterance_order_sha256": "4624b4ef2f598ecfe17d36f228fd3d0f3f2f91d0eea73f08a2c8aae24f0ad1c0",
+      "utterance_labels": "03_HierTFR/data/seq_data_librispeech_v3/tr_label_utt.npy",
+      "phoneme_labels": "03_HierTFR/data/seq_data_librispeech_v3/tr_label_phn.npy",
+      "archived_distribution_figures": {
+        "03_HierTFR/exp/hiertfr-BOMA/global_train_phoneme_dist.png": {
+          "sha256": "40b1aeeccb918e5a3e0f49a4a7e3c6c96ef3814ab3b6ab494648b24d6bc71d13",
+          "bytes": 129105
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/global_train_utt_score_dist.png": {
+          "sha256": "b0d0be1fb9835af315b7724d1da9e73111a767b5c3922c8fbe6e4847e719212a",
+          "bytes": 86826
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_1/fold_1_train_phoneme_dist.png": {
+          "sha256": "67420dee71188650012f09abc72d55b4d798753f17511d9d724d91d6ab5c633e",
+          "bytes": 126861
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_1/fold_1_train_utt_score_dist.png": {
+          "sha256": "4d6dd24d1492b1bdb7ef988d8ac550014ffa4b3ae7322ddf1a90ba149a33eaf9",
+          "bytes": 80811
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_1/fold_1_val_phoneme_dist.png": {
+          "sha256": "601e1fdd1ec804c8299affd62711b662fb5fc89b585249faf6ab9b539902e32d",
+          "bytes": 106747
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_1/fold_1_val_utt_score_dist.png": {
+          "sha256": "65ab7758c54c6e79231da152d09f27646f37df22e9794ea40b51023b2a3b067d",
+          "bytes": 89566
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_2/fold_2_train_phoneme_dist.png": {
+          "sha256": "34e042b66e22c3113d2a34cd3f2df3137e10d6de05f3dfa4a2c476730784a437",
+          "bytes": 126982
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_2/fold_2_train_utt_score_dist.png": {
+          "sha256": "2c7359357057438ee762f0ebc8e61c856adc0503fa9ff685f22042a4b6e27ede",
+          "bytes": 82101
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_2/fold_2_val_phoneme_dist.png": {
+          "sha256": "cd3a63b8243303c4146ac891972bd807b9bf16162c3fb98596e9e9ea97d776bd",
+          "bytes": 126716
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_2/fold_2_val_utt_score_dist.png": {
+          "sha256": "33c191583a9b310c656424f6892fbeaebf8e9bc1f5716f3bf2d4d186584e1106",
+          "bytes": 83611
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_3/fold_3_train_phoneme_dist.png": {
+          "sha256": "6ed1670c8d96d02dfc914a1c5a3cd1eb50eb3506e8d76d9daa35c218fb22fa3f",
+          "bytes": 127495
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_3/fold_3_train_utt_score_dist.png": {
+          "sha256": "767a5962e8ec929676bf0e0fb3997b3186f84dea75b6c643418e94f835bc565d",
+          "bytes": 82177
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_3/fold_3_val_phoneme_dist.png": {
+          "sha256": "a01c90426b767abbe5fe8b4f74ed34d414bca33b0344250345a812141f6c20c2",
+          "bytes": 127131
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_3/fold_3_val_utt_score_dist.png": {
+          "sha256": "036f22e003a73a9086826b5059095a153da7f748c6fb59c03cb19cddb70c22b2",
+          "bytes": 86584
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_4/fold_4_train_phoneme_dist.png": {
+          "sha256": "2712d90bd57860c37a4cd70ebb96c2fb1efa3a58e2564e07d7b952680bdc7cb8",
+          "bytes": 126509
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_4/fold_4_train_utt_score_dist.png": {
+          "sha256": "0ade8720463fff2ab3da364b7106d726d3a475b14b4a7c840988774199c92faf",
+          "bytes": 81326
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_4/fold_4_val_phoneme_dist.png": {
+          "sha256": "867c25fba2e851a8a5e7c7d34c48397a9113c4cfd221dcd901c428f0c3d5a203",
+          "bytes": 126904
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_4/fold_4_val_utt_score_dist.png": {
+          "sha256": "8620f127619c8af611626206d82d29bb9ccc28d3a860227f1c82899aa9ee68b5",
+          "bytes": 86861
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_5/fold_5_train_phoneme_dist.png": {
+          "sha256": "85b5d24dc97d4af3626c003cd53199398ba32fcebd3698c9ada6e39332a6a13d",
+          "bytes": 127319
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_5/fold_5_train_utt_score_dist.png": {
+          "sha256": "2001d4d4cf7051cd2f95a71cfb78ee0a801ae23599c51ac7e93b7f3b33b6b0e9",
+          "bytes": 81293
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_5/fold_5_val_phoneme_dist.png": {
+          "sha256": "6cbdce60919614f055424f514e1d7aefde2f05132d2fafc5427b0172d40af568",
+          "bytes": 125957
+        },
+        "03_HierTFR/exp/hiertfr-BOMA/fold_5/fold_5_val_utt_score_dist.png": {
+          "sha256": "7927d4e100c136534ffb1151a7c57685f488b3949b3b2f59555d0b33b5e5dfac",
+          "bytes": 89025
+        }
+      }
+    },
+    "conpco": {
+      "experiment": "04_ConPCO/exp/conpco-BOMA",
+      "fold_profile": "profile_a",
+      "utterance_order": "04_ConPCO/src/utt_ids_train_orden_mi_train",
+      "utterance_order_sha256": "4624b4ef2f598ecfe17d36f228fd3d0f3f2f91d0eea73f08a2c8aae24f0ad1c0",
+      "utterance_labels": "04_ConPCO/data/seq_data_librispeech_v4/tr_label_utt.npy",
+      "phoneme_labels": "04_ConPCO/data/seq_data_librispeech_v4/tr_label_phn.npy",
+      "archived_distribution_figures": {
+        "04_ConPCO/exp/conpco-BOMA/global_train_phoneme_dist.png": {
+          "sha256": "e375a47cd45430623f797250663f55c38138df23a2ece82f2abcf3c99a5a688b",
+          "bytes": 131658
+        },
+        "04_ConPCO/exp/conpco-BOMA/global_train_utt_score_dist.png": {
+          "sha256": "1119d9c86f4849a4df2325410be87fcf7a280a1efa6efdaa78ca2d8c25bf179d",
+          "bytes": 89721
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_1/fold_1_train_phoneme_dist.png": {
+          "sha256": "85a4aaa682eb00a7e5469277e3537efb774c065de1f043fb133b22131f411261",
+          "bytes": 132589
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_1/fold_1_train_utt_score_dist.png": {
+          "sha256": "cade4322491ed044f2b783eb3fefac110b4aba9a6d40a582c4c52e988f62f2a3",
+          "bytes": 85194
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_1/fold_1_val_phoneme_dist.png": {
+          "sha256": "c104271e575d26f72b3bf1cc1b50692437e0689a73b0c9b8b8fece2aa013d4e9",
+          "bytes": 130776
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_1/fold_1_val_utt_score_dist.png": {
+          "sha256": "e0ace70d02ce293bff490d694b38f5939633616d911a3e14a9b2c17e9375fac9",
+          "bytes": 84437
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_2/fold_2_train_phoneme_dist.png": {
+          "sha256": "86243c1d287cd8b3d6b7044b99803cabbbce260e2aa5f4c4f108f1ee3425415d",
+          "bytes": 133023
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_2/fold_2_train_utt_score_dist.png": {
+          "sha256": "958747dc1a62e6a11ca0e628b34d03fc42ad7c6ca7b85239133bf82519b496da",
+          "bytes": 85231
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_2/fold_2_val_phoneme_dist.png": {
+          "sha256": "af7d362c3ef467fea390932d4d91c01eeb482e8298d38f2a63813692cb94b502",
+          "bytes": 131513
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_2/fold_2_val_utt_score_dist.png": {
+          "sha256": "cd3d3c84f344b9221e04e3d5dc53ae4bb449ba647895e1ba452e6e432ece6438",
+          "bytes": 85463
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_3/fold_3_train_phoneme_dist.png": {
+          "sha256": "123006afdb5bab28b56ddbeff7c0d963465071bc73256fc03e2274b121a0ad26",
+          "bytes": 133694
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_3/fold_3_train_utt_score_dist.png": {
+          "sha256": "8e6f65117c32d9c98b77575fa4f23ee91ca87e22a993193c842bbd91b1094fb8",
+          "bytes": 84658
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_3/fold_3_val_phoneme_dist.png": {
+          "sha256": "ae43ee4458d9292bef156aa0b9788d8f36deb63f199233f82320a9acb99a1831",
+          "bytes": 113860
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_3/fold_3_val_utt_score_dist.png": {
+          "sha256": "3adb8aa887c194538dfec96a02e9898b9f11306004dca2542323d03732d985a9",
+          "bytes": 88288
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_4/fold_4_train_phoneme_dist.png": {
+          "sha256": "27420a1e860c99e31254618eca1a5817e5664fed4af5394808c0ccaa3be9d18a",
+          "bytes": 132442
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_4/fold_4_train_utt_score_dist.png": {
+          "sha256": "76289b17a057a161c4d42fc2073ab16569fb359c6f7da5ae88e9fdc801eec97b",
+          "bytes": 84727
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_4/fold_4_val_phoneme_dist.png": {
+          "sha256": "df796f5215cee48648747f7f6657450d0472ea276c5e9b60960fb6b7b712be32",
+          "bytes": 131376
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_4/fold_4_val_utt_score_dist.png": {
+          "sha256": "b29c510974eacec18ace26168bfecdf8230a15134e3282731d1067dc350c7219",
+          "bytes": 84384
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_5/fold_5_train_phoneme_dist.png": {
+          "sha256": "fb0001091ae9af0c4d0c373ac7e9c6e7ab10bd799869e32aca79be02b0ffd78e",
+          "bytes": 132770
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_5/fold_5_train_utt_score_dist.png": {
+          "sha256": "520e491d830bf9cce1f393fbcc54fb7a20dbdb036dc4916b39443504150029f2",
+          "bytes": 85015
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_5/fold_5_val_phoneme_dist.png": {
+          "sha256": "04fbd1c336c5bd5ab188992036c90df07b6ad2d4db4866088054e4521d3fecdd",
+          "bytes": 131676
+        },
+        "04_ConPCO/exp/conpco-BOMA/fold_5/fold_5_val_utt_score_dist.png": {
+          "sha256": "32e67691912e02a873459f1a8e9fc1ddf9fd24cda47206092c6ce01be987bed1",
+          "bytes": 87992
+        }
+      }
+    },
+    "hmamba": {
+      "experiment": "05_hmamba/exp/hmamba-BOMA/0",
+      "fold_profile": "profile_a",
+      "utterance_order": "05_hmamba/utt_ids_train_orden_mi_train",
+      "utterance_order_sha256": "4624b4ef2f598ecfe17d36f228fd3d0f3f2f91d0eea73f08a2c8aae24f0ad1c0",
+      "utterance_labels": "05_hmamba/data/so762/gop-librispeech-bies/train/label_utt.npy",
+      "phoneme_labels": "05_hmamba/data/so762/gop-librispeech-bies/train/label_phn.npy",
+      "archived_distribution_figures": {
+        "05_hmamba/exp/hmamba-BOMA/0/global_train_phoneme_dist.png": {
+          "sha256": "3e5689ad7c5f02d969be632ac2433ee0ab0185e4ba16d5ada03424fc1f358453",
+          "bytes": 124609
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/global_train_utt_score_dist.png": {
+          "sha256": "1119d9c86f4849a4df2325410be87fcf7a280a1efa6efdaa78ca2d8c25bf179d",
+          "bytes": 89721
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_1/fold_1_train_phoneme_dist.png": {
+          "sha256": "e33990712014315523337c60dac7d4ffc055d437ef31ddec2b6271de94a371d4",
+          "bytes": 135316
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_1/fold_1_train_utt_score_dist.png": {
+          "sha256": "cade4322491ed044f2b783eb3fefac110b4aba9a6d40a582c4c52e988f62f2a3",
+          "bytes": 85194
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_1/fold_1_val_phoneme_dist.png": {
+          "sha256": "acc9685ca95530f54491eafbcc6e456f5ba59a4e742f9ff81faaa20ebf4ffaf7",
+          "bytes": 120594
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_1/fold_1_val_utt_score_dist.png": {
+          "sha256": "e0ace70d02ce293bff490d694b38f5939633616d911a3e14a9b2c17e9375fac9",
+          "bytes": 84437
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_2/fold_2_train_phoneme_dist.png": {
+          "sha256": "e87130d8e4395cab578bbaf72cfc4a2f007d89ae2981640e376a8db000539e45",
+          "bytes": 135705
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_2/fold_2_train_utt_score_dist.png": {
+          "sha256": "958747dc1a62e6a11ca0e628b34d03fc42ad7c6ca7b85239133bf82519b496da",
+          "bytes": 85231
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_2/fold_2_val_phoneme_dist.png": {
+          "sha256": "b74ba26c9452e9558ca2cd17ec8fed52d24c13b28b0c649365f20be519ba0dd6",
+          "bytes": 121208
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_2/fold_2_val_utt_score_dist.png": {
+          "sha256": "cd3d3c84f344b9221e04e3d5dc53ae4bb449ba647895e1ba452e6e432ece6438",
+          "bytes": 85463
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_3/fold_3_train_phoneme_dist.png": {
+          "sha256": "532284682805e128e30182669ff301ef81a6bd17b2a3784ec51fee480322a8ef",
+          "bytes": 135953
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_3/fold_3_train_utt_score_dist.png": {
+          "sha256": "8e6f65117c32d9c98b77575fa4f23ee91ca87e22a993193c842bbd91b1094fb8",
+          "bytes": 84658
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_3/fold_3_val_phoneme_dist.png": {
+          "sha256": "ac97eea5d8fa6be9565c101ee0eb104b26589cce8d661ff55813e5d4250112ad",
+          "bytes": 121289
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_3/fold_3_val_utt_score_dist.png": {
+          "sha256": "3adb8aa887c194538dfec96a02e9898b9f11306004dca2542323d03732d985a9",
+          "bytes": 88288
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_4/fold_4_train_phoneme_dist.png": {
+          "sha256": "4c73a910913501529ef63075c1fd8a22ab5fa3e29db5aa665583e69c23949411",
+          "bytes": 135354
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_4/fold_4_train_utt_score_dist.png": {
+          "sha256": "76289b17a057a161c4d42fc2073ab16569fb359c6f7da5ae88e9fdc801eec97b",
+          "bytes": 84727
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_4/fold_4_val_phoneme_dist.png": {
+          "sha256": "c7958219e680e036417a3cc3293acad7f4cd9a58df8a5c0cd1d4bce3f54b47f3",
+          "bytes": 121364
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_4/fold_4_val_utt_score_dist.png": {
+          "sha256": "b29c510974eacec18ace26168bfecdf8230a15134e3282731d1067dc350c7219",
+          "bytes": 84384
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_5/fold_5_train_phoneme_dist.png": {
+          "sha256": "88ca3a2bb328a4cc0f51d8c2c8e8fe1ff5edc7486f305e6bf627d23f25095af8",
+          "bytes": 135657
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_5/fold_5_train_utt_score_dist.png": {
+          "sha256": "520e491d830bf9cce1f393fbcc54fb7a20dbdb036dc4916b39443504150029f2",
+          "bytes": 85015
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_5/fold_5_val_phoneme_dist.png": {
+          "sha256": "0eb9d20adcbed21e5b3370dc8d9dd027590facc33f7f1c524a966fc75f9e3810",
+          "bytes": 121086
+        },
+        "05_hmamba/exp/hmamba-BOMA/0/fold_5/fold_5_val_utt_score_dist.png": {
+          "sha256": "32e67691912e02a873459f1a8e9fc1ddf9fd24cda47206092c6ce01be987bed1",
+          "bytes": 87992
+        }
+      }
+    },
+    "m3c": {
+      "experiment": "06_M3C/exp/M3C-BOMA",
+      "fold_profile": "profile_b",
+      "utterance_order": "06_M3C/src/utt_ids_train_orden_mi_train",
+      "utterance_order_sha256": "4624b4ef2f598ecfe17d36f228fd3d0f3f2f91d0eea73f08a2c8aae24f0ad1c0",
+      "utterance_labels": "06_M3C/data/GoP_VC_Features_Embbeding_norm/tr_label_utt.npy",
+      "phoneme_labels": "06_M3C/data/GoP_VC_Features_Embbeding_norm/tr_label_phn.npy",
+      "archived_distribution_figures": {
+        "06_M3C/exp/M3C-BOMA/global_train_phoneme_dist.png": {
+          "sha256": "40b1aeeccb918e5a3e0f49a4a7e3c6c96ef3814ab3b6ab494648b24d6bc71d13",
+          "bytes": 129105
+        },
+        "06_M3C/exp/M3C-BOMA/global_train_utt_score_dist.png": {
+          "sha256": "b0d0be1fb9835af315b7724d1da9e73111a767b5c3922c8fbe6e4847e719212a",
+          "bytes": 86826
+        },
+        "06_M3C/exp/M3C-BOMA/fold_1/fold_1_train_phoneme_dist.png": {
+          "sha256": "67420dee71188650012f09abc72d55b4d798753f17511d9d724d91d6ab5c633e",
+          "bytes": 126861
+        },
+        "06_M3C/exp/M3C-BOMA/fold_1/fold_1_train_utt_score_dist.png": {
+          "sha256": "4d6dd24d1492b1bdb7ef988d8ac550014ffa4b3ae7322ddf1a90ba149a33eaf9",
+          "bytes": 80811
+        },
+        "06_M3C/exp/M3C-BOMA/fold_1/fold_1_val_phoneme_dist.png": {
+          "sha256": "601e1fdd1ec804c8299affd62711b662fb5fc89b585249faf6ab9b539902e32d",
+          "bytes": 106747
+        },
+        "06_M3C/exp/M3C-BOMA/fold_1/fold_1_val_utt_score_dist.png": {
+          "sha256": "65ab7758c54c6e79231da152d09f27646f37df22e9794ea40b51023b2a3b067d",
+          "bytes": 89566
+        },
+        "06_M3C/exp/M3C-BOMA/fold_2/fold_2_train_phoneme_dist.png": {
+          "sha256": "34e042b66e22c3113d2a34cd3f2df3137e10d6de05f3dfa4a2c476730784a437",
+          "bytes": 126982
+        },
+        "06_M3C/exp/M3C-BOMA/fold_2/fold_2_train_utt_score_dist.png": {
+          "sha256": "2c7359357057438ee762f0ebc8e61c856adc0503fa9ff685f22042a4b6e27ede",
+          "bytes": 82101
+        },
+        "06_M3C/exp/M3C-BOMA/fold_2/fold_2_val_phoneme_dist.png": {
+          "sha256": "cd3a63b8243303c4146ac891972bd807b9bf16162c3fb98596e9e9ea97d776bd",
+          "bytes": 126716
+        },
+        "06_M3C/exp/M3C-BOMA/fold_2/fold_2_val_utt_score_dist.png": {
+          "sha256": "33c191583a9b310c656424f6892fbeaebf8e9bc1f5716f3bf2d4d186584e1106",
+          "bytes": 83611
+        },
+        "06_M3C/exp/M3C-BOMA/fold_3/fold_3_train_phoneme_dist.png": {
+          "sha256": "6ed1670c8d96d02dfc914a1c5a3cd1eb50eb3506e8d76d9daa35c218fb22fa3f",
+          "bytes": 127495
+        },
+        "06_M3C/exp/M3C-BOMA/fold_3/fold_3_train_utt_score_dist.png": {
+          "sha256": "767a5962e8ec929676bf0e0fb3997b3186f84dea75b6c643418e94f835bc565d",
+          "bytes": 82177
+        },
+        "06_M3C/exp/M3C-BOMA/fold_3/fold_3_val_phoneme_dist.png": {
+          "sha256": "a01c90426b767abbe5fe8b4f74ed34d414bca33b0344250345a812141f6c20c2",
+          "bytes": 127131
+        },
+        "06_M3C/exp/M3C-BOMA/fold_3/fold_3_val_utt_score_dist.png": {
+          "sha256": "036f22e003a73a9086826b5059095a153da7f748c6fb59c03cb19cddb70c22b2",
+          "bytes": 86584
+        },
+        "06_M3C/exp/M3C-BOMA/fold_4/fold_4_train_phoneme_dist.png": {
+          "sha256": "2712d90bd57860c37a4cd70ebb96c2fb1efa3a58e2564e07d7b952680bdc7cb8",
+          "bytes": 126509
+        },
+        "06_M3C/exp/M3C-BOMA/fold_4/fold_4_train_utt_score_dist.png": {
+          "sha256": "0ade8720463fff2ab3da364b7106d726d3a475b14b4a7c840988774199c92faf",
+          "bytes": 81326
+        },
+        "06_M3C/exp/M3C-BOMA/fold_4/fold_4_val_phoneme_dist.png": {
+          "sha256": "867c25fba2e851a8a5e7c7d34c48397a9113c4cfd221dcd901c428f0c3d5a203",
+          "bytes": 126904
+        },
+        "06_M3C/exp/M3C-BOMA/fold_4/fold_4_val_utt_score_dist.png": {
+          "sha256": "8620f127619c8af611626206d82d29bb9ccc28d3a860227f1c82899aa9ee68b5",
+          "bytes": 86861
+        },
+        "06_M3C/exp/M3C-BOMA/fold_5/fold_5_train_phoneme_dist.png": {
+          "sha256": "85b5d24dc97d4af3626c003cd53199398ba32fcebd3698c9ada6e39332a6a13d",
+          "bytes": 127319
+        },
+        "06_M3C/exp/M3C-BOMA/fold_5/fold_5_train_utt_score_dist.png": {
+          "sha256": "2001d4d4cf7051cd2f95a71cfb78ee0a801ae23599c51ac7e93b7f3b33b6b0e9",
+          "bytes": 81293
+        },
+        "06_M3C/exp/M3C-BOMA/fold_5/fold_5_val_phoneme_dist.png": {
+          "sha256": "6cbdce60919614f055424f514e1d7aefde2f05132d2fafc5427b0172d40af568",
+          "bytes": 125957
+        },
+        "06_M3C/exp/M3C-BOMA/fold_5/fold_5_val_utt_score_dist.png": {
+          "sha256": "7927d4e100c136534ffb1151a7c57685f488b3949b3b2f59555d0b33b5e5dfac",
+          "bytes": 89025
+        }
+      }
+    }
+  }
+}
