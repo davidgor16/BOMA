@@ -457,5 +457,29 @@
       "restored_files": 356,
       "restoration": "pass"
     }
+  },
+  "figure_title_corrections": {
+    "status": "uploaded_sha256_verified",
+    "release": "v1.0.1",
+    "release_id": 394770506,
+    "images_corrected": 330,
+    "total_changed_pixels_outside_title": 0,
+    "server_inventory_images_verified": 694,
+    "server_inventory_failures": 0,
+    "experiment_packages": 6,
+    "package_members_verified": 2229,
+    "non_target_members_byte_identical": true,
+    "report": "metadata/figure_title_corrections.json",
+    "release_assets_verified": 8,
+    "download_integration": {
+      "authenticated_download": "pass",
+      "restoration": "pass",
+      "package": "gopt-experiments",
+      "restored_files": 356,
+      "corrected_images_verified": 55,
+      "archive_sha256": "a33e8b486dabbc0389f76f5d04f44104758c20ddcad2ac8acbd1beb2bbf743c1"
+    },
+    "server_analysis_script": "models_analysis/distribution_similarity.py",
+    "server_analysis_execution": "pass; --utt-bins 10"
   }
 }

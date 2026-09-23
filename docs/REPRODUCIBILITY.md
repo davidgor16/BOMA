@@ -17,6 +17,16 @@ English annotation edits are checked against the captured files in two ways: equ
 
 Full retraining of all architectures and clean installation of all six environments have not been validated by this preparation task.
 
+### Saved figure title correction (v1.0.1)
+
+The [figure title audit](FIGURE_TITLES.md) covers 330 UTT-Mean histograms across all
+30 experiment directories containing these plots. Every pixel outside the title
+rectangle is identical after correction. All other members of the six rebuilt
+experiment packages retain their original SHA-256 hashes. The correction also
+passed a check of all 694 images in the original testGPU inventory: only the 330
+authorized files changed. Research training scripts and numerical artifacts are
+unchanged.
+
 ## Protocol distinctions requiring attention
 
 ### Speaker partitioning

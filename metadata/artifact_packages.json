@@ -34,14 +34,14 @@
     {
       "id": "conpco-experiments",
       "files": 355,
-      "uncompressed_bytes": 118543541,
+      "uncompressed_bytes": 117825389,
       "parts": [
         {
           "name": "conpco-experiments.tar.gz.part001",
-          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.0/conpco-experiments.tar.gz.part001",
-          "bytes": 82275181,
-          "sha256": "0d414b5ebf3d53b9ba74c175b7006caf1c8e7a6ce57d7a5e4e41b8426ceba037",
-          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/572469822"
+          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/conpco-experiments.tar.gz.part001",
+          "bytes": 80988312,
+          "sha256": "d376d25655f3b0481dd2a22eb97f04643c7a247d7a01c23d205bc496b88e589a",
+          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/583987580"
         }
       ]
     },
@@ -76,14 +76,14 @@
     {
       "id": "gopt-experiments",
       "files": 356,
-      "uncompressed_bytes": 62778577,
+      "uncompressed_bytes": 62060425,
       "parts": [
         {
           "name": "gopt-experiments.tar.gz.part001",
-          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.0/gopt-experiments.tar.gz.part001",
-          "bytes": 32936857,
-          "sha256": "b85da319b15890f641dc2ad8819fc53370dd5a0cae5033e722c218d6b2d770bd",
-          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/572470191"
+          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/gopt-experiments.tar.gz.part001",
+          "bytes": 31919180,
+          "sha256": "a33e8b486dabbc0389f76f5d04f44104758c20ddcad2ac8acbd1beb2bbf743c1",
+          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/583987721"
         }
       ]
     },
@@ -118,14 +118,14 @@
     {
       "id": "hiertfr-experiments",
       "files": 356,
-      "uncompressed_bytes": 97759851,
+      "uncompressed_bytes": 97114931,
       "parts": [
         {
           "name": "hiertfr-experiments.tar.gz.part001",
-          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.0/hiertfr-experiments.tar.gz.part001",
-          "bytes": 61752411,
-          "sha256": "28870b582e60f05e00c12139446d97b1c1db694cecb677fda96d3e51ec22e142",
-          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/572470398"
+          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/hiertfr-experiments.tar.gz.part001",
+          "bytes": 60496179,
+          "sha256": "88018ad90d68f065711d3fed23d8b6b3f9c25fa45234ce3740e469aff1fb42eb",
+          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/583987840"
         }
       ]
     },
@@ -160,14 +160,14 @@
     {
       "id": "hipama-experiments",
       "files": 356,
-      "uncompressed_bytes": 63297413,
+      "uncompressed_bytes": 62579261,
       "parts": [
         {
           "name": "hipama-experiments.tar.gz.part001",
-          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.0/hipama-experiments.tar.gz.part001",
-          "bytes": 31884914,
-          "sha256": "b8365664e561bf3e9b3afd8e7b4831a1581fc57cf6f7fc09f9fd7dca72c71693",
-          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/572470593"
+          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/hipama-experiments.tar.gz.part001",
+          "bytes": 30856795,
+          "sha256": "fe7324f3609492c4f6893f9b27f2fcec5b4290ef0ac81d4f4305e1b8c17532e3",
+          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/583987929"
         }
       ]
     },
@@ -209,14 +209,14 @@
     {
       "id": "hmamba-experiments",
       "files": 390,
-      "uncompressed_bytes": 371902656,
+      "uncompressed_bytes": 371166196,
       "parts": [
         {
           "name": "hmamba-experiments.tar.gz.part001",
-          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.0/hmamba-experiments.tar.gz.part001",
-          "bytes": 310178913,
-          "sha256": "656d8bd4c76382f478c3f93206534d3e0e6b43ecea29a1912e5cfbfe2aee3236",
-          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/572472190"
+          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/hmamba-experiments.tar.gz.part001",
+          "bytes": 307438724,
+          "sha256": "d9efa132638e04c57af19dc3e6af88bc90e68d62a3ad89f6b0a65023d37c719e",
+          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/583988075"
         }
       ]
     },
@@ -258,14 +258,14 @@
     {
       "id": "m3c-experiments",
       "files": 416,
-      "uncompressed_bytes": 100609852,
+      "uncompressed_bytes": 99910008,
       "parts": [
         {
           "name": "m3c-experiments.tar.gz.part001",
-          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.0/m3c-experiments.tar.gz.part001",
-          "bytes": 49175606,
-          "sha256": "c5a5b16caa4ce00cb43d83eb7e427d0b258ef2d9c5c2cec318d071a96697a2b6",
-          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/572474494"
+          "url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/m3c-experiments.tar.gz.part001",
+          "bytes": 46950171,
+          "sha256": "096b46d2120bbb15185284ff5bd7d31e0d366bf3ed1bea97f4d0c477931a567e",
+          "github_api_url": "https://api.github.com/repos/davidgor16/BOMA/releases/assets/583988524"
         }
       ]
     },
@@ -285,6 +285,14 @@
     }
   ],
   "release": {
+    "tag": "v1.0.1",
+    "url": "https://github.com/davidgor16/BOMA/releases/tag/v1.0.1",
+    "github_release_id": 394770506,
+    "repository_visibility": "private",
+    "checksums_url": "https://github.com/davidgor16/BOMA/releases/download/v1.0.1/SHA256SUMS",
+    "scope": "Corrected experiment packages; data and supplementary packages remain in v1.0.0"
+  },
+  "base_release": {
     "tag": "v1.0.0",
     "url": "https://github.com/davidgor16/BOMA/releases/tag/v1.0.0",
     "github_release_id": 391414230,

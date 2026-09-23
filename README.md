@@ -6,7 +6,7 @@ Research code and saved experiments associated with *Beyond the Majority Bin: A 
 
 This repository preserves the six model implementations and experimental artifacts from the experiment server. Preparation changes to the research Python files are limited to English comments and docstrings; their executable tokens and syntax trees were checked against the captured originals. Independent tools provide explicit output paths, artifact verification, and evaluation of saved predictions.
 
-> **Release v1.0.0:** data, checkpoints, saved experiments and figures are available in the [release assets](https://github.com/davidgor16/BOMA/releases/tag/v1.0.0). The repository currently requires authorized GitHub access. See [validation and limitations](docs/REPRODUCIBILITY.md) for the scope of the verified results.
+> **Release v1.0.1:** [corrected experiment packages](https://github.com/davidgor16/BOMA/releases/tag/v1.0.1) contain 330 UTT-Mean title corrections, with every pixel outside the titles unchanged. Data and supplementary packages remain in [v1.0.0](https://github.com/davidgor16/BOMA/releases/tag/v1.0.0). See the [figure audit](docs/FIGURE_TITLES.md) and [validation and limitations](docs/REPRODUCIBILITY.md). The repository currently requires authorized GitHub access.
 
 ## What is included
 
@@ -54,11 +54,11 @@ source .venv-analysis/bin/activate
 python -m pip install -r environments/analysis.txt
 ```
 
-Download the GOPT experiment package from the [release page](https://github.com/davidgor16/BOMA/releases/tag/v1.0.0) while signed in, or use the authenticated [GitHub CLI](https://cli.github.com/manual/gh_release_download). Save every part of the selected package in `release-assets/`:
+Download the GOPT experiment package from the [release page](https://github.com/davidgor16/BOMA/releases/tag/v1.0.1) while signed in, or use the authenticated [GitHub CLI](https://cli.github.com/manual/gh_release_download). Save every part of the selected package in `release-assets/`:
 
 ```bash
 gh auth login
-gh release download v1.0.0 --repo davidgor16/BOMA \
+gh release download v1.0.1 --repo davidgor16/BOMA \
   --pattern 'gopt-experiments.tar.gz.part*' --dir release-assets
 ```
 

@@ -121,7 +121,7 @@ as evidence that every historical experiment used that same assignment. It is
 preserved unchanged.
 
 For the actual distribution plots, restore the corresponding `*-experiments`
-package from [release v1.0.0](https://github.com/davidgor16/BOMA/releases/tag/v1.0.0).
+package from [release v1.0.1](https://github.com/davidgor16/BOMA/releases/tag/v1.0.1).
 Each experiment contains `global_train_*_dist.png` and each `fold_N/` contains
 the corresponding training and validation PNGs:
 
@@ -134,5 +134,7 @@ the corresponding training and validation PNGs:
 | HMamba | `05_hmamba/exp/hmamba-BOMA/0/` |
 | M3C | `06_M3C/exp/M3C-BOMA/` |
 
-The historical red plots are titled "Utterance Total Score Distribution", but
-their source computes the mean of all five utterance annotations: UTT-Mean.
+The red histograms represent the mean of all five utterance annotations:
+UTT-Mean. Release v1.0.1 corrects their former "Utterance Total Score Distribution"
+titles without changing any pixel outside the title. The filenames remain
+unchanged. See [the correction procedure and integrity audit](../docs/FIGURE_TITLES.md).

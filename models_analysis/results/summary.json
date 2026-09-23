@@ -31,7 +31,7 @@
   "utt_mean_intervals": "Left-closed, right-open; final interval includes 10",
   "aggregation": "Arithmetic mean across model-fold comparisons; equal model and fold weights; reused folds are not independent replications",
   "fold_assignment_status": "Reconstructed speaker assignments checked against archived distribution figures; not independently saved historical membership logs.",
-  "fold_assignment_sha256": "1ab4a301c62f5db0f4bcd0b33d1da32250d16ccd9d9f119424bfef1edb4c660d",
+  "fold_assignment_sha256": "5c1f3e5dfe22528cd41a0deb425c8b5d6cdb067257cfd6dd38ba7acfb0cf01a7",
   "software": {
     "python": "3.11.9",
     "numpy": "2.4.4",
