@@ -18,8 +18,7 @@ This repository preserves the six model implementations and experimental artifac
 | `04_ConPCO/` | ConPCO and contrastive phonemic ordinal regularization |
 | `05_hmamba/` | HMamba, feature loaders and MDD utilities |
 | `06_M3C/` | M3C architecture and training scripts |
-| `models_analysis/` | Original CCC, CCC-BS, PCC, MSE and distribution analyses |
-| `model_utils/` | Reproducible BOMA fold distribution overlap percentages and results |
+| `models_analysis/` | Original metric analyses and reproducible BOMA fold distribution overlap percentages |
 | `tools/` | Separate launch, evaluation, restoration and verification tools |
 | `environments/` | Environment recipes by model and for analysis |
 | `metadata/` | Source provenance, checksums, launch settings and artifact index |
@@ -27,7 +26,7 @@ This repository preserves the six model implementations and experimental artifac
 The saved experiment collection contains `original`, `CV`, `CV-DB`, `CV-MS`, `BOMA`, and `BOMA-SB` conditions for each architecture. These results are distributed separately from Git history. See [data and experiment layout](docs/DATA.md) and the [experiment catalogue](docs/EXPERIMENTS.md).
 
 For phoneme and UTT-Mean distribution similarity across the six BOMA experiments,
-see [the overlap calculation and results](model_utils/README.md), including the
+see [the overlap calculation and results](models_analysis/README.md), including the
 explicit binning and reconstructed fold provenance.
 
 ## Model-specific supplementary results

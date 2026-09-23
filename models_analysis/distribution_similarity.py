@@ -75,7 +75,7 @@ class ArtifactReader:
             else:
                 raise FileNotFoundError(
                     f"Missing verified labels: {relative}. Restore the data packages "
-                    "described in model_utils/README.md, or supply --data-root."
+                    "described in models_analysis/README.md, or supply --data-root."
                 )
         array, source = self.cache[digest]
         return array, {

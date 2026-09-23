@@ -25,7 +25,7 @@ The current scripts use `GroupKFold(n_splits=5)`. This separates speaker groups 
 
 [group_folds.json](../metadata/group_folds.json) records the fold indices regenerated with the server's scikit-learn 1.7.2, original utterance-order files and the exact current GroupKFold procedure. Each model has 2,500 utterances and 125 speakers; each validation fold contains 500 utterances and 25 speakers, with no speaker overlap with training. These are regenerated current-procedure assignments, not independent proof of the historical fold membership used for every archived run.
 
-The [BOMA distribution audit](../model_utils/README.md) identifies two fold profiles
+The [BOMA distribution audit](../models_analysis/README.md) identifies two fold profiles
 in the archived distribution figures. It uses explicit reconstructed speaker
 assignments matching those profiles, independently of the installed splitter,
 and calculates distribution overlap percentages for all six BOMA experiments.

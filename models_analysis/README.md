@@ -58,13 +58,13 @@ gh release download v1.0.0 --repo davidgor16/BOMA \
   --pattern 'hmamba-data.tar.gz.part*' --dir release-assets
 python tools/restore_artifacts.py --package gopt-data --package hmamba-data \
   --from-dir release-assets
-python model_utils/distribution_similarity.py --output-dir runs/distribution-similarity
+python models_analysis/distribution_similarity.py --output-dir runs/distribution-similarity
 ```
 
 If the artifacts are already restored elsewhere, pass their common parent:
 
 ```bash
-python model_utils/distribution_similarity.py \
+python models_analysis/distribution_similarity.py \
   --data-root /path/to/restored-artifacts \
   --output-dir runs/distribution-similarity
 ```
@@ -96,8 +96,8 @@ The [shared training UTT-Mean figure](results/global_train_utt_mean_dist.png) us
 the same histogram counts and bin edges as the report. Recreate it with:
 
 ```bash
-python model_utils/plot_utt_mean_distribution.py \
-  --output model_utils/results/global_train_utt_mean_dist.png
+python models_analysis/plot_utt_mean_distribution.py \
+  --output models_analysis/results/global_train_utt_mean_dist.png
 ```
 
 These values describe broadly similar phonetic composition and approximate
